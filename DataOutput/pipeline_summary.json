@@ -1,0 +1,17 @@
+{
+  "pipeline_run_at": "2026-05-19T11:17:31.401256+00:00",
+  "subreddit": "indonesia",
+  "listing": "new",
+  "posts_fetched": 25,
+  "posts_file": "DataOutput/reddit_posts.json",
+  "comments_with_replies": 42,
+  "comments_file": "DataOutput/reddit_comments.json",
+  "dataset_jsonv1": "DataOutput/indonesia_ultrachat_stylev1.json",
+  "dataset_jsonv2": "DataOutput/indonesia_ultrachat_stylev2.json",
+  "dataset_v1_size": 36,
+  "dataset_v2_size": 36,
+  "step1_seconds": 1.2,
+  "step2_seconds": 102.0,
+  "step3_seconds": 0.1,
+  "total_seconds": 109.3
+}
