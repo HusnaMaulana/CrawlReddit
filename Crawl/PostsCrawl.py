@@ -21,7 +21,7 @@ HEADERS = {
 
 
 def crawl_posts(
-    limit: int = 25,
+    limit: int = 100,
     output_file: str = "DataOutput/reddit_posts.json",
 ) -> list[dict]:
     """
@@ -88,7 +88,7 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Crawl Reddit posts.")
-    parser.add_argument("--limit",       type=int, default=25,                       help="Number of posts to fetch (max 100, default: 100)")
+    parser.add_argument("--limit",       type=int, default=100,                       help="Number of posts to fetch (max 100, default: 100)")
     parser.add_argument("--output-file", default="DataOutput/reddit_posts.json",     help="Output JSON file")
     args = parser.parse_args()
 

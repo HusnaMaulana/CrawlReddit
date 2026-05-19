@@ -25,7 +25,7 @@ def run_comment_step_wrapper(
 def run_pipeline(
     subreddit: str = "indonesia",
     listing: str = "new",
-    limit: int = 25,
+    limit: int = 100,
     max_posts: int | None = None,
     posts_file: str = "DataOutput/reddit_posts.json",
     comments_file: str = "DataOutput/reddit_comments.json",
@@ -117,7 +117,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Reddit crawl pipeline: posts -> comments with replies")
     parser.add_argument("--subreddit",     default="indonesia",                        help="Target subreddit (default: indonesia)")
     parser.add_argument("--listing",       default="new",                              help="Listing type: new / hot / top (default: new)")
-    parser.add_argument("--limit",         type=int, default=25,                       help="Number of posts to fetch (max 100, default: 25)")
+    parser.add_argument("--limit",         type=int, default=100,                       help="Number of posts to fetch (max 100, default: 25)")
     parser.add_argument("--max-posts",     type=int, default=None,                     help="Cap posts sent to comment crawler (default: all)")
     parser.add_argument("--posts-file",    default="DataOutput/reddit_posts.json",     help="Intermediate posts JSON file")
     parser.add_argument("--comments-file", default="DataOutput/reddit_comments.json",  help="Output comments JSON file")

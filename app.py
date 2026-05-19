@@ -7,7 +7,7 @@ if __name__ == "__main__":
     )
     parser.add_argument("--subreddit",     default="indonesia",                        help="Target subreddit (default: indonesia)")
     parser.add_argument("--listing",       default="new",                              help="Listing type: new / hot / top (default: new)")
-    parser.add_argument("--limit",         type=int, default=25,                      help="Number of posts to fetch (max 100, default: 100)")
+    parser.add_argument("--limit",         type=int, default=100,                      help="Number of posts to fetch (max 100, default: 100)")
     parser.add_argument("--max-posts",     type=int, default=None,                     help="Cap posts sent to comment crawler (default: all)")
     parser.add_argument("--posts-file",    default="DataOutput/reddit_posts.json",     help="Intermediate posts JSON file")
     parser.add_argument("--comments-file", default="DataOutput/reddit_comments.json",  help="Output comments JSON file")
