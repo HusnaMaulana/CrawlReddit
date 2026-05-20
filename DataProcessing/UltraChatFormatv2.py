@@ -2,9 +2,13 @@ import json
 import re
 import sys
 import os
+
+# Add parent directory to sys.path so it can find Utils when run directly
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from Utils.json_utils import load_json
 
-sys.stdout.reconfigure(encoding='utf-8')
+sys.stdout.reconfigure(encoding="utf-8")
 
 # =====================================================
 # CONFIG
@@ -12,24 +16,14 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 MAX_DEPTH = 6
 
-BAD_TEXT = {
-    "[deleted]",
-    "[removed]",
-    "",
-    " "
-}
+BAD_TEXT = {"[deleted]", "[removed]", "", " "}
 
 LOW_QUALITY_PATTERNS = [
     "upvote",
     "downvote",
 ]
 
-MEDIA_ONLY = {
-    "gif",
-    "img",
-    "video",
-    "giphy"
-}
+MEDIA_ONLY = {"gif", "img", "video", "giphy"}
 
 # =====================================================
 # EMOJI REGEX
@@ -37,23 +31,24 @@ MEDIA_ONLY = {
 
 _EMOJI_RE = re.compile(
     "["
-    "\U0001F600-\U0001F64F"
-    "\U0001F300-\U0001F5FF"
-    "\U0001F680-\U0001F6FF"
-    "\U0001F1E0-\U0001F1FF"
-    "\U0001F900-\U0001F9FF"
-    "\U0001FA70-\U0001FAFF"
-    "\U00002702-\U000027B0"
-    "\U000024C2-\U0001F251"
-    "\U0000200D"
-    "\U0000FE0F"
+    "\U0001f600-\U0001f64f"
+    "\U0001f300-\U0001f5ff"
+    "\U0001f680-\U0001f6ff"
+    "\U0001f1e0-\U0001f1ff"
+    "\U0001f900-\U0001f9ff"
+    "\U0001fa70-\U0001faff"
+    "\U00002702-\U000027b0"
+    "\U000024c2-\U0001f251"
+    "\U0000200d"
+    "\U0000fe0f"
     "]+",
-    flags=re.UNICODE
+    flags=re.UNICODE,
 )
 
 # =====================================================
 # CLEANING
 # =====================================================
+
 
 def clean_text(text):
 
@@ -64,88 +59,49 @@ def clean_text(text):
     # REMOVE URLS
     # =========================================
 
-    text = re.sub(
-        r"https?://\S+|www\.\S+",
-        "",
-        text
-    )
+    text = re.sub(r"https?://\S+|www\.\S+", "", text)
 
     # =========================================
     # REMOVE REDDIT GIF/IMAGE/VIDEO EMBEDS
     # =========================================
 
     # ![gif](giphy|xxxxx)
-    text = re.sub(
-        r"!\[(?:gif|img|video)?\]\([^)]*\)",
-        "",
-        text,
-        flags=re.IGNORECASE
-    )
+    text = re.sub(r"!\[(?:gif|img|video)?\]\([^)]*\)", "", text, flags=re.IGNORECASE)
 
     # standalone (giphy|xxxxx)
-    text = re.sub(
-        r"\((?:giphy|emote)[^)]*\)",
-        "",
-        text,
-        flags=re.IGNORECASE
-    )
+    text = re.sub(r"\((?:giphy|emote)[^)]*\)", "", text, flags=re.IGNORECASE)
 
     # remove bare !gif !img !video
-    text = re.sub(
-        r"!\s*(gif|img|video)\b",
-        "",
-        text,
-        flags=re.IGNORECASE
-    )
+    text = re.sub(r"!\s*(gif|img|video)\b", "", text, flags=re.IGNORECASE)
 
     # =========================================
     # REMOVE MARKDOWN LINKS
     # =========================================
 
     # [text](url) -> text
-    text = re.sub(
-        r"\[([^\]]+)\]\([^)]*\)",
-        r"\1",
-        text
-    )
+    text = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", text)
 
     # =========================================
     # REMOVE HTML ENTITIES
     # =========================================
 
-    text = re.sub(
-        r"&gt;|&lt;|&amp;|&nbsp;|&#x200B;",
-        " ",
-        text
-    )
+    text = re.sub(r"&gt;|&lt;|&amp;|&nbsp;|&#x200B;", " ", text)
 
     # =========================================
     # REMOVE BLOCKQUOTE SYMBOLS
     # =========================================
 
-    text = re.sub(
-        r"(^|\s)>\s*",
-        " ",
-        text
-    )
+    text = re.sub(r"(^|\s)>\s*", " ", text)
 
     # =========================================
     # REMOVE MARKDOWN FORMATTING
     # =========================================
 
     # bold / italic / strike
-    text = re.sub(
-        r"(\*{1,3}|_{1,3}|~{2})",
-        "",
-        text
-    )
+    text = re.sub(r"(\*{1,3}|_{1,3}|~{2})", "", text)
 
     # inline code
-    text = re.sub(
-        r"`{1,3}.*?`{1,3}",
-        "",
-        text
-    )
+    text = re.sub(r"`{1,3}.*?`{1,3}", "", text)
 
     # =========================================
     # REMOVE EMOJIS
@@ -157,11 +113,7 @@ def clean_text(text):
     # REMOVE INVISIBLE UNICODE
     # =========================================
 
-    text = re.sub(
-        r"[\u200b-\u200f\u202a-\u202e]",
-        "",
-        text
-    )
+    text = re.sub(r"[\u200b-\u200f\u202a-\u202e]", "", text)
 
     # =========================================
     # REMOVE EXCESSIVE PUNCTUATION
@@ -186,6 +138,7 @@ def clean_text(text):
 # =====================================================
 # VALIDATION
 # =====================================================
+
 
 def is_valid(text):
 
@@ -224,6 +177,7 @@ def is_valid(text):
 # EXTRACT SINGLE CONVERSATION CHAIN
 # =====================================================
 
+
 def extract_chain(comment, chain=None, depth=0):
 
     if chain is None:
@@ -252,11 +206,7 @@ def extract_chain(comment, chain=None, depth=0):
 
         if is_valid(reply_text):
 
-            return extract_chain(
-                reply,
-                chain,
-                depth + 1
-            )
+            return extract_chain(reply, chain, depth + 1)
 
     return chain
 
@@ -274,7 +224,7 @@ def process_data(input_file: str, output_file: str) -> list:
     for comment in data:
         chain = extract_chain(comment)
 
-        if len(chain) < 2:
+        if not chain:
             continue
 
         # Build post content as first element
@@ -292,6 +242,12 @@ def process_data(input_file: str, output_file: str) -> list:
         # Prepend post content as the first element
         full_chain = [context_text.strip()] + chain
 
+        if len(full_chain) % 2 != 0:
+            full_chain = full_chain[:-1]
+
+        if len(full_chain) < 2:
+            continue
+
         key = tuple(x.lower().strip() for x in full_chain)
         if key not in seen:
             dataset.append(full_chain)
@@ -307,7 +263,9 @@ def process_data(input_file: str, output_file: str) -> list:
 if __name__ == "__main__":
     SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
     INPUT_FILE = os.path.join(SCRIPT_DIR, "..", "DataOutput", "reddit_comments.json")
-    OUTPUT_FILE = os.path.join(SCRIPT_DIR, "..", "DataOutput", "indonesia_ultrachat_stylev2.json")
+    OUTPUT_FILE = os.path.join(
+        SCRIPT_DIR, "..", "DataOutput", "indonesia_ultrachat_stylev2.json"
+    )
 
     dataset = process_data(INPUT_FILE, OUTPUT_FILE)
 

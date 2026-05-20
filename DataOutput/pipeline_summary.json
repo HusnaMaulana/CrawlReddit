@@ -1,17 +1,17 @@
 {
-  "pipeline_run_at": "2026-05-19T11:44:52.166706+00:00",
+  "pipeline_run_at": "2026-05-20T09:45:58.054135+00:00",
   "subreddit": "indonesia",
   "listing": "new",
-  "posts_fetched": 74,
+  "posts_fetched": 4,
   "posts_file": "DataOutput/reddit_posts.json",
-  "comments_with_replies": 29,
+  "comments_with_replies": 156,
   "comments_file": "DataOutput/reddit_comments.json",
   "dataset_jsonv1": "DataOutput/indonesia_ultrachat_stylev1.json",
   "dataset_jsonv2": "DataOutput/indonesia_ultrachat_stylev2.json",
-  "dataset_v1_size": 66,
-  "dataset_v2_size": 66,
-  "step1_seconds": 2.4,
-  "step2_seconds": 223.1,
-  "step3_seconds": 0.1,
-  "total_seconds": 231.7
+  "dataset_v1_size": 410,
+  "dataset_v2_size": 410,
+  "step1_seconds": 17.1,
+  "step2_seconds": 2124.3,
+  "step3_seconds": 0.6,
+  "total_seconds": 2148.0
 }

@@ -2,6 +2,10 @@ import json
 import re
 import sys
 import os
+
+# Add parent directory to sys.path so it can find Utils when run directly
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from Utils.json_utils import load_json
 
 sys.stdout.reconfigure(encoding='utf-8')

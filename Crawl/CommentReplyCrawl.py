@@ -32,6 +32,39 @@ DELAY_MORE_CHILDREN = 1
 
 
 # ─────────────────────────────────────────────────────────────
+# HTTP UTILS
+# ─────────────────────────────────────────────────────────────
+
+def _request_with_retry(url: str, params: dict | None = None, max_retries: int = 5) -> requests.Response:
+    for attempt in range(max_retries):
+        try:
+            resp = requests.get(
+                url,
+                headers=HEADERS,
+                params=params,
+                proxies=PROXIES,
+                verify=False,
+                timeout=15,
+            )
+            
+            if resp.status_code == 429:
+                wait_time = int(resp.headers.get("Retry-After", 10 * (attempt + 1)))
+                print(f"    [WARN] Rate limited (429). Waiting {wait_time}s (attempt {attempt+1}/{max_retries})...")
+                time.sleep(wait_time)
+                continue
+                
+            resp.raise_for_status()
+            return resp
+            
+        except requests.exceptions.RequestException as e:
+            if attempt == max_retries - 1:
+                raise
+            print(f"    [WARN] Request error: {e}. Retrying in 5s...")
+            time.sleep(5)
+    raise RuntimeError(f"Failed after {max_retries} retries.")
+
+
+# ─────────────────────────────────────────────────────────────
 # MEDIA DETECTION
 # ─────────────────────────────────────────────────────────────
 
@@ -135,16 +168,10 @@ def expand_more_children(link_id: str, children_ids: list[str]) -> list[dict]:
         }
 
         try:
-            resp = requests.get(
+            resp = _request_with_retry(
                 "https://www.reddit.com/api/morechildren",
-                headers=HEADERS,
-                params=params,
-                proxies=PROXIES,
-                verify=False,
-                timeout=10,
+                params=params
             )
-
-            resp.raise_for_status()
 
             data = resp.json()
 
@@ -256,15 +283,7 @@ def fetch_comments(post_id: str, subreddit: str) -> list[dict]:
 
     try:
 
-        response = requests.get(
-            url,
-            headers=HEADERS,
-            timeout=10,
-            proxies=PROXIES,
-            verify=False,
-        )
-
-        response.raise_for_status()
+        response = _request_with_retry(url)
 
         data = response.json()
 
@@ -371,7 +390,7 @@ def fetch_comments(post_id: str, subreddit: str) -> list[dict]:
 def crawl_comments(
     posts_file: str = "DataOutput/reddit_posts.json",
     output_file: str = "DataOutput/reddit_comments.json",
-    max_posts: int | None = None,
+    max_posts: int | None = 2500,
 ) -> list[dict]:
 
     try:
@@ -491,7 +510,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--max-posts",
         type=int,
-        default=None,
+        default=500,
         help="Limit number of posts"
     )
 
