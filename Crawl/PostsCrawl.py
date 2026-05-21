@@ -1,11 +1,33 @@
+"""
+PostsCrawl.py — Multi-listing Reddit post crawler (producer side).
+
+Key improvements over v1
+────────────────────────
+• Crawls hot, new, top, rising (4× coverage)
+• SQLite-backed dedup — O(1) lookups that survive restarts
+• Pagination cursor persisted to SQLite — resume after crash
+• Exponential back-off retry (2→4→8→16→32 s)
+• 429 / 5xx handling with Retry-After respect
+• Optional multiprocessing.Queue for real-time producer-consumer
+• Continuous mode (loop forever with configurable delay)
+• JSONL output (append-only, no O(n²) rewrite)
+"""
+
+import multiprocessing
 import os
 import time
-from Utils.json_utils import append_json, load_existing_ids
+
 import requests
 import urllib3
 
+from Utils.logging_config import get_logger, setup_logging
+from Utils.storage import CrawlDatabase, JsonlWriter
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+# ── constants ─────────────────────────────────────────────────
+
+MULTIREDDIT_BASE = "https://www.reddit.com/user/chivalricsystems/m/indonesiasemua"
 
 PROXIES = {
     "http": os.environ.get("HTTP_PROXY"),
@@ -20,107 +42,260 @@ HEADERS = {
     )
 }
 
+MIN_DELAY_BETWEEN_REQUESTS = 5.0  # seconds
+SENTINEL = None  # poison pill for queue consumers
+
+
+# ── HTTP layer ────────────────────────────────────────────────
+
+
+def _request_with_retry(
+    url: str,
+    params: dict | None = None,
+    max_retries: int = 5,
+) -> requests.Response:
+    log = get_logger("posts")
+    backoff = 2
+
+    for attempt in range(max_retries):
+        try:
+            resp = requests.get(
+                url,
+                headers=HEADERS,
+                params=params,
+                proxies=PROXIES,
+                verify=False,
+                timeout=15,
+            )
+
+            if resp.status_code == 429:
+                wait = int(resp.headers.get("Retry-After", backoff * (attempt + 1)))
+                log.warning(
+                    f"Rate-limited (429). Waiting {wait}s "
+                    f"(attempt {attempt + 1}/{max_retries})"
+                )
+                time.sleep(wait)
+                continue
+
+            if resp.status_code in (500, 502, 503, 504):
+                log.warning(
+                    f"Server error {resp.status_code}. " f"Retrying in {backoff}s..."
+                )
+                time.sleep(backoff)
+                backoff = min(backoff * 2, 32)
+                continue
+
+            resp.raise_for_status()
+            return resp
+
+        except requests.exceptions.RequestException as exc:
+            if attempt == max_retries - 1:
+                raise
+            log.warning(f"Request error: {exc}. Retrying in {backoff}s...")
+            time.sleep(backoff)
+            backoff = min(backoff * 2, 32)
+
+    raise RuntimeError(f"Failed after {max_retries} retries: {url}")
+
+
+def _fetch_page(
+    listing: str,
+    batch_limit: int,
+    after: str | None,
+) -> tuple[list[dict], str | None]:
+    """Fetch one page from a listing. Returns (posts, next_after)."""
+    url = f"{MULTIREDDIT_BASE}/{listing}/.json"
+    params: dict = {"limit": batch_limit}
+    if after:
+        params["after"] = after
+
+    resp = _request_with_retry(url, params=params)
+    body = resp.json()
+    posts = body["data"]["children"]
+    next_after = body["data"].get("after")
+    return posts, next_after
+
+
+# ── post extraction ───────────────────────────────────────────
+
+
+def _extract_post(raw: dict) -> dict:
+    d = raw["data"]
+    return {
+        "id": d.get("id"),
+        "title": d.get("title"),
+        "author": d.get("author"),
+        "subreddit": d.get("subreddit"),
+        "score": d.get("score"),
+        "num_comments": d.get("num_comments"),
+        "created_utc": d.get("created_utc"),
+        "url": "https://www.reddit.com" + d.get("permalink", ""),
+        "selftext": d.get("selftext", ""),
+    }
+
+
+# ── main crawler ──────────────────────────────────────────────
+
 
 def crawl_posts(
-    limit: int = 2500,
-    output_file: str = "DataOutput/reddit_posts.json",
-) -> list[dict]:
+    limit: int = 5000,
+    output_file: str = "DataOutput/posts.jsonl",
+    db_path: str = "DataOutput/crawl_state.db",
+    listings: list[str] | None = None,
+    queue: "multiprocessing.Queue | None" = None,
+    continuous: bool = False,
+    cycle_delay: int = 300,
+) -> int:
     """
-    Fetch posts from Reddit and save to `output_file`.
-    Returns the collected post records.
+    Crawl posts from one or more listings and persist them.
+
+    Parameters
+    ──────────
+    limit        : Max new posts to discover (per run / per cycle).
+    output_file  : Path to JSONL output file.
+    db_path      : Path to SQLite state database.
+    listings     : Listings to crawl (default: hot, new, top, rising).
+    queue        : If provided, push each new post dict into this queue
+                   so comment workers can start immediately.
+    continuous   : If True, loop indefinitely with `cycle_delay` pauses.
+    cycle_delay  : Seconds to sleep between continuous cycles.
+
+    Returns
+    ───────
+    Number of new posts discovered (across all cycles).
     """
-    existing_ids = set(load_existing_ids(output_file, "id"))
+    if listings is None:
+        listings = ["hot", "new", "top", "rising"]
 
-    print(f"[INFO] Existing posts: {len(existing_ids)}")
+    setup_logging()
+    log = get_logger("posts")
 
-    results = []
-    after = None
-    fetched_count = 0
+    db = CrawlDatabase(db_path)
+    writer = JsonlWriter(output_file)
 
-    while fetched_count < limit:
-        batch_limit = min(100, limit - fetched_count)
-        url = f"https://www.reddit.com/user/chivalricsystems/m/indonesiasemua/hot/.json?limit={batch_limit}"
-        if after:
-            url += f"&after={after}"
-            
-        print(f"[Step 1] Fetching {url} ...")
+    grand_total = 0
 
-        try:
-            response = requests.get(
-                url, headers=HEADERS, timeout=10, proxies=PROXIES, verify=False
-            )
-            response.raise_for_status()
-            try:
-                data = response.json()
-            except Exception:
-                raise RuntimeError(
-                    "Response is not valid JSON — Reddit may be blocked by your ISP.\n"
-                    "Tip: Set HTTPS_PROXY env var to route through a proxy, e.g.:\n"
-                    "     $env:HTTPS_PROXY='http://127.0.0.1:10809'"
+    def _one_cycle() -> int:
+        cycle_new = 0
+
+        for listing in listings:
+            log.info(f"[PostsCrawl] Listing: {listing}")
+
+            cursor_key = f"cursor_{listing}"
+            after = db.load_cursor(cursor_key) or None
+            if after:
+                log.info(f"  Resuming {listing} from cursor: {after}")
+
+            fetched_this_listing = 0
+
+            while fetched_this_listing < limit:
+                batch_size = min(100, limit - fetched_this_listing)
+
+                try:
+                    raw_posts, next_after = _fetch_page(listing, batch_size, after)
+                except Exception as exc:
+                    log.error(f"  [{listing}] Page fetch failed: {exc}")
+                    break
+
+                if not raw_posts:
+                    log.info(f"  [{listing}] No more posts.")
+                    break
+
+                new_batch: list[dict] = []
+                skipped = 0
+
+                for raw in raw_posts:
+                    post = _extract_post(raw)
+                    post_id = post.get("id")
+
+                    if not post_id:
+                        continue
+
+                    if db.is_known(post_id):
+                        skipped += 1
+                        continue
+
+                    db.mark_pending(
+                        post_id,
+                        subreddit=post.get("subreddit", ""),
+                        created_at=float(post.get("created_utc") or 0),
+                    )
+                    new_batch.append(post)
+
+                    if queue is not None:
+                        queue.put(post)
+
+                    fetched_this_listing += 1
+                    cycle_new += 1
+
+                    if fetched_this_listing >= limit:
+                        break
+
+                if new_batch:
+                    writer.append(new_batch)
+
+                log.info(
+                    f"  [{listing}] page: {len(new_batch)} new, "
+                    f"{skipped} skipped | listing total: {fetched_this_listing}"
                 )
-        except RuntimeError:
-            raise
-        except Exception as e:
-            raise RuntimeError(f"Failed to fetch posts: {e}") from e
 
-        posts = data["data"]["children"]
-        if not posts:
-            break
+                # persist / clear cursor
+                after = next_after
+                db.save_cursor(cursor_key, after or "")
 
-        for post in posts:
-            d = post["data"]
+                if not after:
+                    log.info(f"  [{listing}] End of listing reached.")
+                    break
 
-            post_data = {
-                "id": d.get("id"),
-                "title": d.get("title"),
-                "author": d.get("author"),
-                "subreddit": d.get("subreddit"),
-                "score": d.get("score"),
-                "num_comments": d.get("num_comments"),
-                "created_utc": d.get("created_utc"),
-                "url": "https://www.reddit.com" + d.get("permalink", ""),
-                "selftext": d.get("selftext", ""),
-            }
-            
-            fetched_count += 1
+                time.sleep(MIN_DELAY_BETWEEN_REQUESTS)
 
-            if post_data["id"] not in existing_ids:
-                results.append(post_data)
-                existing_ids.add(post_data["id"])
-                
-            if fetched_count >= limit:
-                break
-                
-        after = data["data"].get("after")
-        if not after or fetched_count >= limit:
-            break
-            
-        time.sleep(1)
+        log.info(f"[PostsCrawl] Cycle complete. New this cycle: {cycle_new}")
+        return cycle_new
 
-    os.makedirs(os.path.dirname(output_file) or ".", exist_ok=True)
-    append_json(output_file, results)
+    # ── run ───────────────────────────────────────────────────
 
-    print(f"[INFO] New posts found: {len(results)}")
-    print(f"[INFO] Appended to: '{output_file}'")
-    return results
+    if continuous:
+        log.info("[PostsCrawl] Continuous mode active.")
+        while True:
+            found = _one_cycle()
+            grand_total += found
+            log.info(
+                f"[PostsCrawl] Sleeping {cycle_delay}s "
+                f"before next cycle (grand total: {grand_total})..."
+            )
+            time.sleep(cycle_delay)
+    else:
+        grand_total = _one_cycle()
 
+    db.close()
+    log.info(f"[PostsCrawl] Done. Grand total new posts: {grand_total}")
+    return grand_total
+
+
+# ── CLI entrypoint ────────────────────────────────────────────
 
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="Crawl Reddit posts.")
-    parser.add_argument(
-        "--limit",
-        type=int,
-        default=500,
-        help="Number of posts to fetch (default: 500)",
+    setup_logging()
+    parser = argparse.ArgumentParser(
+        description="Crawl Reddit posts from multiple listings."
     )
+    parser.add_argument("--limit", type=int, default=500)
+    parser.add_argument("--output-file", default="DataOutput/posts.jsonl")
+    parser.add_argument("--db-path", default="DataOutput/crawl_state.db")
     parser.add_argument(
-        "--output-file", default="DataOutput/reddit_posts.json", help="Output JSON file"
+        "--listings", default="hot,new,top,rising", help="Comma-separated listing types"
     )
+    parser.add_argument("--continuous", action="store_true")
+    parser.add_argument("--cycle-delay", type=int, default=300)
     args = parser.parse_args()
 
     crawl_posts(
         limit=args.limit,
         output_file=args.output_file,
+        db_path=args.db_path,
+        listings=args.listings.split(","),
+        continuous=args.continuous,
+        cycle_delay=args.cycle_delay,
     )

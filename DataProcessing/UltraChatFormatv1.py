@@ -6,7 +6,7 @@ import os
 # Add parent directory to sys.path so it can find Utils when run directly
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from Utils.json_utils import load_json
+from Utils.storage import load_input
 
 sys.stdout.reconfigure(encoding='utf-8')
 
@@ -118,7 +118,7 @@ def clean_text(text):
     # =========================================
 
     text = re.sub(
-        r"&gt;|&lt;|&amp;|&nbsp;|&#x200B;",
+        r"&amp;#x200B;|&gt;|&lt;|&amp;|&nbsp;|&#x200B;|#x200B;",
         " ",
         text
     )
@@ -267,7 +267,7 @@ def extract_chain(comment, chain=None, depth=0):
 
 def process_data(input_file: str, output_file: str) -> list:
     try:
-        data = load_json(input_file)
+        data = load_input(input_file)
     except FileNotFoundError:
         print(f"[ERROR] Input file not found: {input_file}")
         sys.exit(1)
@@ -298,7 +298,7 @@ def process_data(input_file: str, output_file: str) -> list:
 
 if __name__ == "__main__":
     SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-    INPUT_FILE = os.path.join(SCRIPT_DIR, "..", "DataOutput", "reddit_comments.json")
+    INPUT_FILE = os.path.join(SCRIPT_DIR, "..", "DataOutput", "comments.jsonl")
     OUTPUT_FILE = os.path.join(SCRIPT_DIR, "..", "DataOutput", "indonesia_ultrachat_stylev1.json")
 
     dataset = process_data(INPUT_FILE, OUTPUT_FILE)

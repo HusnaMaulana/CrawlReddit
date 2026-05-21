@@ -1,70 +1,153 @@
-import argparse
-from Pipeline.Pipeline import run_pipeline
+"""
+app.py — CLI entry point for the Reddit crawl pipeline.
 
-if __name__ == "__main__":
+Usage examples
+──────────────
+# Default run (4 workers, all listings, 2500 posts):
+    python app.py
+
+# Fast test run:
+    python app.py --limit 10 --workers 2
+
+# Resume a previous run (SQLite remembers which posts are done):
+    python app.py --resume
+
+# Run forever, cycling every 5 minutes:
+    python app.py --continuous --cycle-delay 300
+
+# Skip DataProcessing (just crawl):
+    python app.py --skip-processing
+
+# Custom proxy and 6 workers:
+    python app.py --workers 6
+    # (set HTTP_PROXY / HTTPS_PROXY environment variables)
+"""
+
+import argparse
+import sys
+import os
+
+# ── ensure project root is importable ────────────────────────
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from Pipeline.Pipeline import run_pipeline
+from Utils.logging_config import setup_logging
+
+# ── CLI ───────────────────────────────────────────────────────
+
+
+def main() -> None:
+    setup_logging()
+
     parser = argparse.ArgumentParser(
-        description="Reddit Crawl Pipeline — posts then comments with replies."
+        description="Reddit Crawl Pipeline — posts → comments (producer-consumer).",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
-    parser.add_argument(
-        "--subreddit", default="indonesia", help="Target subreddit (default: indonesia)"
-    )
-    parser.add_argument(
-        "--listing", default="new", help="Listing type: new / hot / top (default: new)"
-    )
+
+    # ── crawl scope ───────────────────────────────────────────
     parser.add_argument(
         "--limit",
         type=int,
         default=2500,
-        help="Number of posts to fetch (default: 2500)",
+        help="Max new posts to discover per run.",
     )
     parser.add_argument(
-        "--max-posts",
-        type=int,
-        default=2500,
-        help="Cap posts sent to comment crawler (default: 2500)",
+        "--listings",
+        default="hot,new,top,rising",
+        help="Comma-separated listing types to crawl.",
     )
+
+    # ── parallelism ───────────────────────────────────────────
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=4,
+        help="Number of parallel comment-crawling worker processes.",
+    )
+
+    # ── files ─────────────────────────────────────────────────
     parser.add_argument(
         "--posts-file",
-        default="DataOutput/reddit_posts.json",
-        help="Intermediate posts JSON file",
+        default="DataOutput/posts.jsonl",
+        help="JSONL file for crawled posts.",
     )
     parser.add_argument(
         "--comments-file",
-        default="DataOutput/reddit_comments.json",
-        help="Output comments JSON file",
+        default="DataOutput/comments.jsonl",
+        help="JSONL file for crawled comments.",
+    )
+    parser.add_argument(
+        "--db-path",
+        default="DataOutput/crawl_state.db",
+        help="SQLite state database path.",
     )
     parser.add_argument(
         "--summary-file",
         default="DataOutput/pipeline_summary.json",
-        help="Pipeline run summary JSON file",
+        help="Pipeline run summary JSON.",
     )
     parser.add_argument(
         "--datasetv1-json",
         default="DataOutput/indonesia_ultrachat_stylev1.json",
-        help="Output dataset JSON file",
+        help="Output path for v1 UltraChat dataset.",
     )
     parser.add_argument(
         "--datasetv2-json",
         default="DataOutput/indonesia_ultrachat_stylev2.json",
-        help="Output dataset JSON file",
+        help="Output path for v2 UltraChat dataset.",
+    )
+
+    # ── modes ─────────────────────────────────────────────────
+    parser.add_argument(
+        "--continuous",
+        action="store_true",
+        help="Run in continuous loop mode (never exits).",
+    )
+    parser.add_argument(
+        "--cycle-delay",
+        type=int,
+        default=300,
+        help="Seconds between continuous cycles.",
+    )
+    parser.add_argument(
+        "--resume",
+        action="store_true",
+        help=(
+            "Resume from last checkpoint. Posts already in the SQLite DB "
+            "are skipped automatically — this flag is a no-op (kept for "
+            "clarity; dedup is always active)."
+        ),
+    )
+    parser.add_argument(
+        "--skip-processing",
+        action="store_true",
+        help="Skip UltraChat DataProcessing step (crawl only).",
     )
     parser.add_argument(
         "--step-delay",
         type=int,
         default=3,
-        help="Seconds to wait between steps (default: 3)",
+        help="Seconds to wait before starting DataProcessing.",
     )
+
     args = parser.parse_args()
 
     run_pipeline(
-        subreddit=args.subreddit,
-        listing=args.listing,
         limit=args.limit,
-        max_posts=args.max_posts,
+        workers=args.workers,
         posts_file=args.posts_file,
         comments_file=args.comments_file,
-        summary_file=args.summary_file,
+        db_path=args.db_path,
+        listings=args.listings.split(","),
+        continuous=args.continuous,
+        cycle_delay=args.cycle_delay,
+        skip_processing=args.skip_processing,
         dataset_jsonv1=args.datasetv1_json,
         dataset_jsonv2=args.datasetv2_json,
+        summary_file=args.summary_file,
         delay_between_steps=args.step_delay,
     )
+
+
+if __name__ == "__main__":
+    main()

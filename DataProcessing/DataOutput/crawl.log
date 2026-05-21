@@ -1,0 +1,1709 @@
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline | ============================================================
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline |   Reddit Crawl Pipeline (producer-consumer)
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline |   Started : 2026-05-21 07:08:56 UTC
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline |   Workers : 4
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline |   Listings: hot, new, top, rising
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline | ============================================================
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline | 
+[Step 1] Starting 4 comment worker(s)...
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline | [Step 2] Starting post producer (crawl_posts)...
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline |   Worker 0 started (pid=1984621)
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline |   Worker 1 started (pid=1984622)
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Started.
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline |   Worker 2 started (pid=1984623)
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Started.
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline |   Worker 3 started (pid=1984624)
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline.posts | [PostsCrawl] Listing: hot
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Started.
+2026-05-21 07:08:56 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Started.
+2026-05-21 07:08:58 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tj9v8c (WkwkwkLand) — "Ketika dikasihani sama negara tetangga…..."
+2026-05-21 07:08:58 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj25jd (indonesia) — "Apa yang terjadi pada tahun 2024 dan sekarang di sub in..."
+2026-05-21 07:08:58 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj9rtq (finansial) — "Pandangan soal ekspor 1 pintu..."
+2026-05-21 07:08:58 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj83ed (AdaIndonesiaCoy) — "Israeli Minister Releases Video Humiliating Bound Inter..."
+2026-05-21 07:08:58 [INFO    ] crawl_pipeline.posts |   [hot] page: 100 new, 0 skipped | listing total: 100
+2026-05-21 07:08:58 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj83ed done — 0 thread(s)
+2026-05-21 07:08:58 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tj9v8c done — 0 thread(s)
+2026-05-21 07:08:59 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj9rtq done — 0 thread(s)
+2026-05-21 07:08:59 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj25jd done — 0 thread(s)
+2026-05-21 07:09:00 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj9w5e (indonesiabebas) — "Waduh satria kerja sudra..."
+2026-05-21 07:09:00 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tj964n (indotech) — "I feel disappointed with myself..."
+2026-05-21 07:09:01 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj8jro (kulineria) — "Oseng Pindang Tongkol + Sides (Tempe &amp; Sayur)..."
+2026-05-21 07:09:01 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj9w5e done — 0 thread(s)
+2026-05-21 07:09:01 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tj964n done — 3 thread(s)
+2026-05-21 07:09:01 [INFO    ] crawl_pipeline.posts |   [hot] page: 100 new, 0 skipped | listing total: 200
+2026-05-21 07:09:01 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj8jro done — 0 thread(s)
+2026-05-21 07:09:01 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj9y4k (indowibu) — "Waduh top male chara..."
+2026-05-21 07:09:01 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj9y4k done — 0 thread(s)
+2026-05-21 07:09:03 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj7ptd (Bandung) — "helm meunang paok..."
+2026-05-21 07:09:03 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tjbda2 (jualbeliindonesia) — "wts Rumah di Kramat Jati, Jakarta Timur..."
+2026-05-21 07:09:03 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tjadc5 (IndoGamer) — "Japanese game publisher’s site crashed after thirsty pl..."
+2026-05-21 07:09:03 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj7ptd done — 0 thread(s)
+2026-05-21 07:09:03 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tjbda2 done — 0 thread(s)
+2026-05-21 07:09:03 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tjadc5 done — 0 thread(s)
+2026-05-21 07:09:03 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj5e6v (Jakarta) — "Silent commute..."
+2026-05-21 07:09:04 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj5e6v done — 0 thread(s)
+2026-05-21 07:09:05 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tinmog (Cekrek) — "hutan tetangga..."
+2026-05-21 07:09:05 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tjbx8y (bali) — "Where’s the best place to get a men’s hair cut?..."
+2026-05-21 07:09:05 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tjcbxg (indocartalk) — "Toolbox yang tidak berisik..."
+2026-05-21 07:09:05 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tinmog done — 0 thread(s)
+2026-05-21 07:09:05 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tjbx8y done — 1 thread(s)
+2026-05-21 07:09:06 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj7217 (BaliTravelTips) — "Bali destination wedding..."
+2026-05-21 07:09:06 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tjcbxg done — 1 thread(s)
+2026-05-21 07:09:06 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj7217 done — 3 thread(s)
+2026-05-21 07:09:07 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tici50 (JudiSaham) — "Indonesia Komunis..."
+2026-05-21 07:09:07 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tikidt (Perempuan) — "Kasih advicr untuk adek yg sudah ada tanda tanda kena b..."
+2026-05-21 07:09:08 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tici50 done — 0 thread(s)
+2026-05-21 07:09:08 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tikidt done — 1 thread(s)
+2026-05-21 07:09:08 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tilnn7 (sehat) — "Maintaining weight is hell🫩..."
+2026-05-21 07:09:08 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tihk4f (karir) — "Lapor Kemnaker..."
+2026-05-21 07:09:08 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tilnn7 done — 1 thread(s)
+2026-05-21 07:09:09 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tihk4f done — 0 thread(s)
+2026-05-21 07:09:10 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti77ma (pria) — "Rekomendasi alat cukur bulu hidung..."
+2026-05-21 07:09:10 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tibqub (indonesian) — "fact check this AI info..."
+2026-05-21 07:09:10 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti77ma done — 0 thread(s)
+2026-05-21 07:09:10 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tibqub done — 2 thread(s)
+2026-05-21 07:09:10 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti4np8 (surabaya) — "A Blossom in Waiting 🤍🌿..."
+2026-05-21 07:09:10 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti4np8 done — 0 thread(s)
+2026-05-21 07:09:11 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1th99h6 (indolostmedia) — "[F] Tayangan Race F1 di Global TV Tahun 2005..."
+2026-05-21 07:09:11 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1th99h6 done — 0 thread(s)
+2026-05-21 07:09:12 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1th50yx (IndonesiaPics) — "Starting the Day Fresh at Pemkab Bojonegoro..."
+2026-05-21 07:09:12 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tfu42t (r4rindonesia) — "[M4F] 31 from the UK looking to make an Indonesian conn..."
+2026-05-21 07:09:12 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tfu42t done — 0 thread(s)
+2026-05-21 07:09:12 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1th50yx done — 0 thread(s)
+2026-05-21 07:09:12 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tf17yl (malang) — "Surabaya Airport Cab services..."
+2026-05-21 07:09:13 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tf17yl done — 0 thread(s)
+2026-05-21 07:09:13 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tendzp (DIYogyakarta) — "Yogyakarta - Borobudur Temple Visit..."
+2026-05-21 07:09:14 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tendzp done — 0 thread(s)
+2026-05-21 07:09:14 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1t0ktlj (ngeteh) — "Bagaimana ngetehmu bulan ini? (May 2026)..."
+2026-05-21 07:09:14 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1sxzcff (IndoFlicks) — "Dangerous Seductress (1992) Indonesian horror from H. T..."
+2026-05-21 07:09:14 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1t0ktlj done — 0 thread(s)
+2026-05-21 07:09:15 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1sxzcff done — 0 thread(s)
+2026-05-21 07:09:15 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1sw6n7j (RajaAmpat) — "First Dive ever in Raja Ampat - possible?..."
+2026-05-21 07:09:15 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1sw6n7j done — 3 thread(s)
+2026-05-21 07:09:16 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1sqvh2y (SalinTempel) — "Stop romanticising bokep lokal..."
+2026-05-21 07:09:16 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1sqvh2y done — 1 thread(s)
+2026-05-21 07:09:16 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1sl2w81 (idiotdijalanan) — "Malah pada berhenti 🤣..."
+2026-05-21 07:09:17 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1s1b6so (IndonesianCoffee) — "Survey help needed!..."
+2026-05-21 07:09:17 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1sl2w81 done — 0 thread(s)
+2026-05-21 07:09:17 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1s1b6so done — 0 thread(s)
+2026-05-21 07:09:17 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1qww8tv (sejarah) — "Foto 3: Visa ke Hindia Belanda..."
+2026-05-21 07:09:17 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1qww8tv done — 0 thread(s)
+2026-05-21 07:09:18 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1qfwfai (aku_ddn) — "aku_ddn pertumbuhanekonomimakro..."
+2026-05-21 07:09:18 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1qfwfai done — 0 thread(s)
+2026-05-21 07:09:19 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1pxr7j3 (IndoLGBT) — "Ruang diskusi LGBT-friendly untuk ex-Muslim Indonesia..."
+2026-05-21 07:09:19 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1nfriyu (NusantaraRaya) — "Indonesia Pra-Nasional (Pra-1928) History Discussion Bi..."
+2026-05-21 07:09:19 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1pxr7j3 done — 1 thread(s)
+2026-05-21 07:09:19 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1nfriyu done — 1 thread(s)
+2026-05-21 07:09:19 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ksrgyg (RisetIndonesia) — "Survey Pengembangan Aplikasi Web berbasis AI untuk Pros..."
+2026-05-21 07:09:20 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ksrgyg done — 0 thread(s)
+2026-05-21 07:09:20 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1iveec7 (Pisang) — "Pisang..."
+2026-05-21 07:09:21 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1iveec7 done — 0 thread(s)
+2026-05-21 07:09:21 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1e7sajx (bukanposronda) — "Helikopter di Bali jatuh karena Baling-baling terlilit ..."
+2026-05-21 07:09:21 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1950ypa (IndonesianExMuslim) — "Utk bisa melupakan dan menjadi ignoran..."
+2026-05-21 07:09:21 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1950ypa done — 0 thread(s)
+2026-05-21 07:09:22 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1e7sajx done — 0 thread(s)
+2026-05-21 07:09:22 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 17j1go7 (GamerMobileIndonesia) — "World of Tanks Blitz..."
+2026-05-21 07:09:22 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 17j1go7 done — 0 thread(s)
+2026-05-21 07:09:23 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing g8syi6 (indomusic) — "Tokona menawarkan iklan gratis untuk musisi lepas dan g..."
+2026-05-21 07:09:23 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] g8syi6 done — 0 thread(s)
+2026-05-21 07:09:23 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj6ztn (BaliTravelTips) — "Heading to Bali Nov 10-18..."
+2026-05-21 07:09:24 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tjbdes (BaliTravelTips) — "Health guidance needed..."
+2026-05-21 07:09:24 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tjbdes done — 3 thread(s)
+2026-05-21 07:09:24 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj6ztn done — 2 thread(s)
+2026-05-21 07:09:24 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tjb6g0 (indotech) — "Apa upsell begini sudah dinormalisasi di toko online? b..."
+2026-05-21 07:09:25 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tjb6g0 done — 0 thread(s)
+2026-05-21 07:09:25 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj283z (indonesiabebas) — "Naik 35an persen wok orang desa pun pake motor wok..."
+2026-05-21 07:09:26 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj283z done — 0 thread(s)
+2026-05-21 07:09:26 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tipj3x (bali) — "First time in Bali..."
+2026-05-21 07:09:26 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tjacae (BaliTravelTips) — "2 Weeks itinerary advice..."
+2026-05-21 07:09:26 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tipj3x done — 3 thread(s)
+2026-05-21 07:09:26 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tjacae done — 1 thread(s)
+2026-05-21 07:09:27 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj0qd1 (jualbeliindonesia) — "WTS rumah di Citraland Surabaya Barat Rp 8 M..."
+2026-05-21 07:09:27 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj0qd1 done — 0 thread(s)
+2026-05-21 07:09:28 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tibcqo (Perempuan) — "Gimana caranya jadi pekerja keras dan tahan banting? Gi..."
+2026-05-21 07:09:28 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tibcqo done — 0 thread(s)
+2026-05-21 07:09:28 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tiik4m (Perempuan) — "Triggered by comments thrown by my manager..."
+2026-05-21 07:09:28 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj8ylx (BaliTravelTips) — "Uluwatu, Kecak Dance, Tanah Lot in one day..."
+2026-05-21 07:09:29 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj8ylx done — 0 thread(s)
+2026-05-21 07:09:29 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tiik4m done — 1 thread(s)
+2026-05-21 07:09:29 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tihpv9 (JudiSaham) — "Broksum KETR May 20th - Besok fix ARA..."
+2026-05-21 07:09:30 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tihpv9 done — 0 thread(s)
+2026-05-21 07:09:30 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj8t3n (jualbeliindonesia) — "WTS Samsung B-series Soundbar HW-B650 3.1ch Subwoofer..."
+2026-05-21 07:09:31 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj8t3n done — 0 thread(s)
+2026-05-21 07:09:31 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj8csl (BaliTravelTips) — "Airport to canguu..."
+2026-05-21 07:09:31 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tj8fy0 (jualbeliindonesia) — "WTS Paketan i5-12400F + RAM 32GB (2x16GB) 3200 Mhz + Mo..."
+2026-05-21 07:09:31 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tj8fy0 done — 0 thread(s)
+2026-05-21 07:09:31 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj8csl done — 0 thread(s)
+2026-05-21 07:09:32 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj9mxz (AdaIndonesiaCoy) — "Bro has seen the great depression and tung tung tung sa..."
+2026-05-21 07:09:32 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj9mxz done — 0 thread(s)
+2026-05-21 07:09:33 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj1nh2 (AdaIndonesiaCoy) — "Agree..."
+2026-05-21 07:09:33 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj1nh2 done — 0 thread(s)
+2026-05-21 07:09:33 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1thswt4 (surabaya) — "Pasang nameset jersey bola..."
+2026-05-21 07:09:33 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj8z62 (indotech) — "Nadiem Makarim dan Hancurnya Industri Startup Indonesia..."
+2026-05-21 07:09:33 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1thswt4 done — 0 thread(s)
+2026-05-21 07:09:34 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj8z62 done — 0 thread(s)
+2026-05-21 07:09:34 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj3ox4 (indonesiabebas) — "kenapa pendidikan Vietnam bisa maju tanpa program heboh..."
+2026-05-21 07:09:35 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj3ox4 done — 0 thread(s)
+2026-05-21 07:09:35 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj9gm1 (IndoGamer) — "Game2 apa yang cocok buat lu rekomendasiin ke gamer try..."
+2026-05-21 07:09:35 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tj4al8 (indonesia) — "Strategi yang bisa digunakan agar rupiah tidak lemah......"
+2026-05-21 07:09:35 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj9gm1 done — 7 thread(s)
+2026-05-21 07:09:36 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj6xln (indonesia) — "28 Tahun yang Lalu..."
+2026-05-21 07:09:36 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tj4al8 done — 0 thread(s)
+2026-05-21 07:09:36 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj6xln done — 0 thread(s)
+2026-05-21 07:09:37 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj8igp (jualbeliindonesia) — "WTS Asus Prime RX 9070 XT 16GB GDDR6 Garansi s/d 2029..."
+2026-05-21 07:09:37 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj8igp done — 0 thread(s)
+2026-05-21 07:09:37 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj6bqj (indonesia) — "Prabowo: Gaji Guru dan ASN Kecil Karena Kekayaan RI Kab..."
+2026-05-21 07:09:38 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tj8y5c (indowibu) — "Please Jangan Boebar Doeloe..."
+2026-05-21 07:09:38 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tj8y5c done — 0 thread(s)
+2026-05-21 07:09:38 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj803f (indonesia) — "Rocky gerung jadi bisu sama pemerintahan prabowo?..."
+2026-05-21 07:09:38 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj6bqj done — 0 thread(s)
+2026-05-21 07:09:38 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj803f done — 5 thread(s)
+2026-05-21 07:09:39 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj9ugp (indonesia) — "Waduh sudah ada gamenya..."
+2026-05-21 07:09:39 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj9ugp done — 0 thread(s)
+2026-05-21 07:09:40 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1iv9w98 (Pisang) — "Pisang..."
+2026-05-21 07:09:40 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tjbuiz (AdaIndonesiaCoy) — "Cat pretends to be asleep to steal food. Brilliant heis..."
+2026-05-21 07:09:40 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1iv9w98 done — 0 thread(s)
+2026-05-21 07:09:40 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj8zwf (indonesia) — "Apa yg Anda lakukan jika ada dalam posisi ini? Apakah A..."
+2026-05-21 07:09:40 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tjbuiz done — 0 thread(s)
+2026-05-21 07:09:41 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj8zwf done — 0 thread(s)
+2026-05-21 07:09:41 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tiqn0z (Cekrek) — "Portrait From Photography Event (Bandung Lautan Photogr..."
+2026-05-21 07:09:42 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tiqn0z done — 0 thread(s)
+2026-05-21 07:09:42 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tjag04 (WkwkwkLand) — "film apalagi yang lain?..."
+2026-05-21 07:09:42 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj6c1g (indonesia) — "What's your favorite Indonesia's Traditional Sport?..."
+2026-05-21 07:09:43 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tjag04 done — 0 thread(s)
+2026-05-21 07:09:43 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj6c1g done — 0 thread(s)
+2026-05-21 07:09:43 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti6ckk (Perempuan) — "Just ended a miserable relationship, I feel so free..."
+2026-05-21 07:09:43 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti6ckk done — 3 thread(s)
+2026-05-21 07:09:44 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tjau4f (IndoGamer) — "Untuk harga Laptop atau PC dengan spesifikasi game ini ..."
+2026-05-21 07:09:44 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tjau4f done — 0 thread(s)
+2026-05-21 07:09:45 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tig6zt (JudiSaham) — "DEWA sampai 900 / 1000 Rupiah?..."
+2026-05-21 07:09:45 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tjagft (WkwkwkLand) — "shits gone too far..."
+2026-05-21 07:09:45 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tig6zt done — 1 thread(s)
+2026-05-21 07:09:45 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tjagft done — 0 thread(s)
+2026-05-21 07:09:45 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tjbnob (jualbeliindonesia) — "WTS Sofa Ashley Furniture 2pcs..."
+2026-05-21 07:09:46 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tjbnob done — 0 thread(s)
+2026-05-21 07:09:46 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj5uy6 (WkwkwkLand) — "Hari Hari ngelamar di perusahaan Lokal...."
+2026-05-21 07:09:46 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj5uy6 done — 0 thread(s)
+2026-05-21 07:09:47 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tj4zht (WkwkwkLand) — "Dr. Tantrum vs Dr Tentram..."
+2026-05-21 07:09:47 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tjbzog (indonesia) — "Cafe owners love English menu here in Indonesia..."
+2026-05-21 07:09:47 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tj4zht done — 0 thread(s)
+2026-05-21 07:09:48 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tjbzog done — 0 thread(s)
+2026-05-21 07:09:48 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj1rdk (BaliTravelTips) — "What is the cheapest way to get from Canggu to Amed Bea..."
+2026-05-21 07:09:48 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj1rdk done — 0 thread(s)
+2026-05-21 07:09:48 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj2dcm (indowibu) — "Wtf is this ancient cccbending technique..."
+2026-05-21 07:09:49 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj2dcm done — 0 thread(s)
+2026-05-21 07:09:49 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tic2xl (IndoGamer) — "Mimpi basah fans persona..."
+2026-05-21 07:09:50 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj626i (WkwkwkLand) — "Please Jangan Boebar Doeloe..."
+2026-05-21 07:09:50 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tic2xl done — 0 thread(s)
+2026-05-21 07:09:50 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj626i done — 0 thread(s)
+2026-05-21 07:09:50 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj5tas (jualbeliindonesia) — "WTS Japanese leather wallet..."
+2026-05-21 07:09:50 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj5tas done — 0 thread(s)
+2026-05-21 07:09:51 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj7klv (indotech) — "Pertimbangan beli Mekbuk di 2026..."
+2026-05-21 07:09:51 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj7klv done — 1 thread(s)
+2026-05-21 07:09:52 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tj8bry (indotech) — "Dana 6-8 jtaan aja, lebih enak mana antara Handheld gam..."
+2026-05-21 07:09:52 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tjaibh (jualbeliindonesia) — "wtb jasa gig (?)..."
+2026-05-21 07:09:52 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tj8bry done — 6 thread(s)
+2026-05-21 07:09:52 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tjaibh done — 2 thread(s)
+2026-05-21 07:09:52 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1thmj7o (indonesian) — "how hard is it to adapt to the working environment in i..."
+2026-05-21 07:09:53 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1thmj7o done — 1 thread(s)
+2026-05-21 07:09:53 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj7pnj (indonesia) — "Jakarta di Bayang-bayang Teror Begal..."
+2026-05-21 07:09:54 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj7pnj done — 0 thread(s)
+2026-05-21 07:09:54 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tj8z68 (indotech) — "[Help] Bantu racikan untuk PC &amp; Monitor budget ment..."
+2026-05-21 07:09:54 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1timrvg (indonesia) — "Prabowo vs IHSG Sesi 1 Hari Ini..."
+2026-05-21 07:09:54 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tj8z68 done — 0 thread(s)
+2026-05-21 07:09:55 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj5u61 (finansial) — "Help me choose Kuliah UPH + Mobil Baru vs Sunway Univer..."
+2026-05-21 07:09:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:09:55 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1timrvg done — 0 thread(s)
+2026-05-21 07:09:56 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj6ls0 (WkwkwkLand) — "Economy so shite even console worth more than entire st..."
+2026-05-21 07:09:56 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:09:56 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tiudkf (indonesia) — "Tempe &amp; Tempo Convergence..."
+2026-05-21 07:09:56 [INFO    ] crawl_pipeline.posts |   [hot] page: 100 new, 0 skipped | listing total: 300
+2026-05-21 07:09:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:09:57 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tjbmbz (indotech) — "Brimo down? Error koneksi internet mu kurang baik..."
+2026-05-21 07:09:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:09:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:09:58 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:09:58 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:09:59 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:09:59 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:10:02 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj5u61 done — 6 thread(s)
+2026-05-21 07:10:02 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj6ls0 done — 0 thread(s)
+2026-05-21 07:10:03 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tiudkf done — 0 thread(s)
+2026-05-21 07:10:04 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tjbmbz done — 0 thread(s)
+2026-05-21 07:10:04 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj9itd (finansial) — "Indonesia is at a perpendicular intersection of two dif..."
+2026-05-21 07:10:04 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tiif24 (kulineria) — "Snack sehabis kantor....."
+2026-05-21 07:10:04 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj9itd done — 0 thread(s)
+2026-05-21 07:10:05 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tiif24 done — 0 thread(s)
+2026-05-21 07:10:05 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tj3w0b (AdaIndonesiaCoy) — "Kid Hugging Giant Snake..."
+2026-05-21 07:10:06 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tinh7b (indonesiabebas) — "Gaji guru hampir saja mau dinaikin 300%..."
+2026-05-21 07:10:06 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tj3w0b done — 0 thread(s)
+2026-05-21 07:10:06 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tinh7b done — 0 thread(s)
+2026-05-21 07:10:06 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj4she (jualbeliindonesia) — "WTS TWS Earfun Air Pro 4..."
+2026-05-21 07:10:07 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj4she done — 0 thread(s)
+2026-05-21 07:10:07 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tiifgd (Cekrek) — "Jogja Sunset..."
+2026-05-21 07:10:07 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tiifgd done — 0 thread(s)
+2026-05-21 07:10:08 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tj5xnp (indotech) — "apakah worth it nambah 1.5jt buat naik dari i5 11th ke ..."
+2026-05-21 07:10:08 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tja2gb (finansial) — "Objectively what are the Best and Worst Majors currentl..."
+2026-05-21 07:10:08 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tj5xnp done — 0 thread(s)
+2026-05-21 07:10:09 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti4w8o (indocartalk) — "Xpeng advances Southeast Asia push with Indonesian fact..."
+2026-05-21 07:10:09 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tja2gb done — 1 thread(s)
+2026-05-21 07:10:09 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti4w8o done — 0 thread(s)
+2026-05-21 07:10:09 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tiu1hq (BaliTravelTips) — "Bali | 25th to 29th May..."
+2026-05-21 07:10:09 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tiu1hq done — 1 thread(s)
+2026-05-21 07:10:10 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tieaof (jualbeliindonesia) — "WTS Jual PC kesayangan Ryzen 9 9900x (12 core) + RTX 50..."
+2026-05-21 07:10:11 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tieaof done — 0 thread(s)
+2026-05-21 07:10:11 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tjcoy2 (jualbeliindonesia) — "WTS Easy Card Klook Taiwan Travel..."
+2026-05-21 07:10:11 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tjafn8 (WkwkwkLand) — "terlambat ga?..."
+2026-05-21 07:10:11 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tjcoy2 done — 0 thread(s)
+2026-05-21 07:10:11 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj9ywy (WkwkwkLand) — "Fesnuk sekarang penuh tukang pancing..."
+2026-05-21 07:10:11 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tjafn8 done — 0 thread(s)
+2026-05-21 07:10:12 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj9ywy done — 0 thread(s)
+2026-05-21 07:10:13 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tiieqo (indonesia) — "atau 2028..."
+2026-05-21 07:10:13 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tiieqo done — 0 thread(s)
+2026-05-21 07:10:13 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tjbrx4 (jualbeliindonesia) — "WTS Rumah hook daerah Jababeka, Cikarang Baru, dekat de..."
+2026-05-21 07:10:13 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tjbl3d (jualbeliindonesia) — "WTS koleksi pin hard rock mulai dari 1993. start from 5..."
+2026-05-21 07:10:13 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tjbrx4 done — 0 thread(s)
+2026-05-21 07:10:14 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tjbl3d done — 0 thread(s)
+2026-05-21 07:10:14 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tizh1i (jualbeliindonesia) — "Wts Salomon hand running 400k baru masih plastikan..."
+2026-05-21 07:10:14 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tizh1i done — 0 thread(s)
+2026-05-21 07:10:15 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tjbie8 (jualbeliindonesia) — "WTS RAM DDR5 8GB SAMSUNG 5600HZ..."
+2026-05-21 07:10:15 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tjbie8 done — 0 thread(s)
+2026-05-21 07:10:15 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tii40s (AdaIndonesiaCoy) — "Biker Thinks The Railway Barriers Are Not For Her..."
+2026-05-21 07:10:16 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1til8zi (bali) — "Whats the best instant Rendang spice mix one can buy on..."
+2026-05-21 07:10:16 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tii40s done — 0 thread(s)
+2026-05-21 07:10:16 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1til8zi done — 0 thread(s)
+2026-05-21 07:10:16 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj2bu4 (WkwkwkLand) — "Sedang mendidik uang agar tidak lemah..."
+2026-05-21 07:10:17 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj2bu4 done — 0 thread(s)
+2026-05-21 07:10:17 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tj4a7c (WkwkwkLand) — "Hidup Shorthair..."
+2026-05-21 07:10:18 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tj4a7c done — 0 thread(s)
+2026-05-21 07:10:18 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj36fv (indonesia) — "Prabowo Klaim Sangat Dihormati Kalau ke Luar Negeri..."
+2026-05-21 07:10:18 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj8t0s (indotech) — "Asus ROG G17 RTX 3050 to Macbook PRO M1 PRO..."
+2026-05-21 07:10:18 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj8t0s done — 0 thread(s)
+2026-05-21 07:10:18 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj36fv done — 0 thread(s)
+2026-05-21 07:10:19 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tiqr00 (BaliTravelTips) — "Lost child’s bag - Batik air..."
+2026-05-21 07:10:19 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tiqr00 done — 1 thread(s)
+2026-05-21 07:10:20 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tixm34 (bali) — "Pilates in Canggu..."
+2026-05-21 07:10:20 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tixm34 done — 2 thread(s)
+2026-05-21 07:10:20 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj3ayw (WkwkwkLand) — "Sosmed memang bikin depresi, tpi untuk orang konoha, su..."
+2026-05-21 07:10:20 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tihqb0 (WkwkwkLand) — "President kitorang takde bijinya satu..."
+2026-05-21 07:10:21 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj3ayw done — 0 thread(s)
+2026-05-21 07:10:21 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tikbwg (indonesia) — "Majalah Matra Prabowo April 2004..."
+2026-05-21 07:10:21 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tihqb0 done — 0 thread(s)
+2026-05-21 07:10:21 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tikbwg done — 0 thread(s)
+2026-05-21 07:10:22 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tj3r4n (WkwkwkLand) — "maksudnya Thermul Jocoensis..."
+2026-05-21 07:10:22 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tj3r4n done — 0 thread(s)
+2026-05-21 07:10:23 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tiw9sf (indowibu) — "Static (🎨: @MelonbreadFBP )..."
+2026-05-21 07:10:23 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tiw9sf done — 0 thread(s)
+2026-05-21 07:10:23 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tifrzy (Cekrek) — "Punya rekomendasi kamera gak bang?..."
+2026-05-21 07:10:23 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj8479 (indonesia) — "Begal dan Kriminal Turut Jadi Alasan Menhan Bentuk 750 ..."
+2026-05-21 07:10:24 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tifrzy done — 1 thread(s)
+2026-05-21 07:10:24 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj8479 done — 0 thread(s)
+2026-05-21 07:10:24 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tim1be (indonesia) — "We're waiting..."
+2026-05-21 07:10:25 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tim1be done — 0 thread(s)
+2026-05-21 07:10:25 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tioixn (BaliTravelTips) — "Grab/Gojek (Car/Bike?)..."
+2026-05-21 07:10:25 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tioixn done — 0 thread(s)
+2026-05-21 07:10:26 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tjckx2 (kulineria) — "croque madame - animo bakery x wichcraft..."
+2026-05-21 07:10:26 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tio9e1 (BaliTravelTips) — "Best Routes for NY&gt; Bali, Indonesia??..."
+2026-05-21 07:10:26 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tjckx2 done — 0 thread(s)
+2026-05-21 07:10:26 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tio9e1 done — 0 thread(s)
+2026-05-21 07:10:27 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tii22q (jualbeliindonesia) — "WTS ACER ASPIRE ONE D270..."
+2026-05-21 07:10:27 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tii22q done — 0 thread(s)
+2026-05-21 07:10:27 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti8dc8 (jualbeliindonesia) — "WTS Bersih-Bersih Gadget Second &amp; BNIB — DJI Mini 3..."
+2026-05-21 07:10:28 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti8dc8 done — 0 thread(s)
+2026-05-21 07:10:28 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tigxe7 (indonesiabebas) — "Wok menterimu loh yang bilang..."
+2026-05-21 07:10:28 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tigw0b (kulineria) — "Brownies &amp; Cookies from That Influencer..."
+2026-05-21 07:10:28 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tigxe7 done — 0 thread(s)
+2026-05-21 07:10:28 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tigw0b done — 0 thread(s)
+2026-05-21 07:10:29 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tih2v3 (indonesia) — "MK baru sampai rumah..."
+2026-05-21 07:10:29 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tih2v3 done — 0 thread(s)
+2026-05-21 07:10:30 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tiq8xc (WkwkwkLand) — "Nemu di fb..."
+2026-05-21 07:10:30 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tiq8xc done — 0 thread(s)
+2026-05-21 07:10:30 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj8lhd (jualbeliindonesia) — "WTS RAM PC Geil Evo Potenza DDR4 2x8GB 2666mhz LongDIMM..."
+2026-05-21 07:10:30 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj8ew1 (jualbeliindonesia) — "WTS , playstation 5 fat disc , ex sony indo..."
+2026-05-21 07:10:30 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj8lhd done — 0 thread(s)
+2026-05-21 07:10:31 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj8ew1 done — 0 thread(s)
+2026-05-21 07:10:31 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tj8be4 (jualbeliindonesia) — "WTS Fan PC 12cm NZXT RF-AP120-FP Copotan AIO NZXT Krake..."
+2026-05-21 07:10:32 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tj8be4 done — 0 thread(s)
+2026-05-21 07:10:32 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tjb61y (AdaIndonesiaCoy) — "Papua itu luas..."
+2026-05-21 07:10:32 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tjb61y done — 0 thread(s)
+2026-05-21 07:10:32 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thoxm1 (indocartalk) — "Report BYD hari ini - Selasa, 19 Mei 2026..."
+2026-05-21 07:10:33 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj7f7s (jualbeliindonesia) — "WTS STILL NEW HIFI AIR 4G WIFI ROUTER RP250.000..."
+2026-05-21 07:10:33 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thoxm1 done — 0 thread(s)
+2026-05-21 07:10:33 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj7f7s done — 0 thread(s)
+2026-05-21 07:10:34 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tikp1s (jualbeliindonesia) — "WTS Iphone 17 258Gb Ibox PA/A BH 100% Fullset Casing Mo..."
+2026-05-21 07:10:34 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tikp1s done — 0 thread(s)
+2026-05-21 07:10:34 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tij9su (kulineria) — "We Have That at Home (Singapore’s version)..."
+2026-05-21 07:10:35 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tij9su done — 0 thread(s)
+2026-05-21 07:10:35 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thfj1u (bali) — "Bali through my lens 📸💚..."
+2026-05-21 07:10:35 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tied2x (indowibu) — "Viral warganet wibu marah akan kelakuan sebuah akun ins..."
+2026-05-21 07:10:35 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tied2x done — 0 thread(s)
+2026-05-21 07:10:35 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thfj1u done — 0 thread(s)
+2026-05-21 07:10:36 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tiew7c (indonesia) — "Seorang pria dilecehkan saat sholat..."
+2026-05-21 07:10:37 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tit7mz (jualbeliindonesia) — "WTS Godox Litemons LA200D (bisa Nego/ Like New)..."
+2026-05-21 07:10:37 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tit7mz done — 0 thread(s)
+2026-05-21 07:10:37 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tiew7c done — 0 thread(s)
+2026-05-21 07:10:37 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj73oo (jualbeliindonesia) — "WTB Iphone 17 or lower..."
+2026-05-21 07:10:37 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tifjc6 (indonesia) — "Is this true?..."
+2026-05-21 07:10:38 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj73oo done — 0 thread(s)
+2026-05-21 07:10:38 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tifjc6 done — 0 thread(s)
+2026-05-21 07:10:39 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tidetz (indonesiabebas) — "MR DIY, ada ada aja..."
+2026-05-21 07:10:39 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tjae3f (WkwkwkLand) — "bedridden kah maksudnya?..."
+2026-05-21 07:10:39 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tidetz done — 0 thread(s)
+2026-05-21 07:10:40 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti5non (IndoGamer) — "Gw bikin game dimana kalian harus meneriakkan mantra bu..."
+2026-05-21 07:10:40 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tjae3f done — 0 thread(s)
+2026-05-21 07:10:40 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tied0l (indonesia) — "Warga Indonesia bakal belajar kesabaran dari warga Ruzz..."
+2026-05-21 07:10:40 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti5non done — 0 thread(s)
+2026-05-21 07:10:40 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tied0l done — 0 thread(s)
+2026-05-21 07:10:41 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tiks85 (BaliTravelTips) — "Bali: Entering the country with an engagement ring..."
+2026-05-21 07:10:42 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tiks85 done — 4 thread(s)
+2026-05-21 07:10:42 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tio1a5 (WkwkwkLand) — "Momen tak terduga..."
+2026-05-21 07:10:42 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj67mr (jualbeliindonesia) — "WTS Steam Wallet (Via Suntik / List Market)..."
+2026-05-21 07:10:42 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj9iko (finansial) — "Kartu selain Jenius/SMBC yang bisa VISA yg kursnya wara..."
+2026-05-21 07:10:42 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj67mr done — 0 thread(s)
+2026-05-21 07:10:42 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tio1a5 done — 0 thread(s)
+2026-05-21 07:10:43 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj9iko done — 2 thread(s)
+2026-05-21 07:10:44 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tincp2 (indonesiabebas) — "Uang dibawa kabur, gaji jadi kecil..."
+2026-05-21 07:10:44 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tincp2 done — 0 thread(s)
+2026-05-21 07:10:44 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti7f4p (indocartalk) — "Diskon geely ex5 pro / max berapa sih? Pada dapat harga..."
+2026-05-21 07:10:44 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tia3kg (BaliTravelTips) — "Let’s explore Bali together..."
+2026-05-21 07:10:45 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tikotv (indotech) — "Apakah dengan mengumpulkan brosur ISP bisa dianggap den..."
+2026-05-21 07:10:45 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti7f4p done — 4 thread(s)
+2026-05-21 07:10:45 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tikotv done — 0 thread(s)
+2026-05-21 07:10:45 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tia3kg done — 3 thread(s)
+2026-05-21 07:10:46 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tioo69 (indotech) — "Kenapa grounding di AC baru tidak dipasang oleh tukang ..."
+2026-05-21 07:10:46 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tioo69 done — 0 thread(s)
+2026-05-21 07:10:47 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1thl7b5 (bali) — "So excited to finally be exploring Bali..."
+2026-05-21 07:10:47 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thc3kq (Cekrek) — "Cosplay di Comifuro XXII..."
+2026-05-21 07:10:47 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1thl7b5 done — 0 thread(s)
+2026-05-21 07:10:47 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tj7rf5 (indonesiabebas) — "Wanted Indonesian in connection with Kg Junjongan murde..."
+2026-05-21 07:10:47 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tj7rf5 done — 0 thread(s)
+2026-05-21 07:10:48 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thc3kq done — 0 thread(s)
+2026-05-21 07:10:48 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti78af (jualbeliindonesia) — "WTS PC Gaming 15 JT..."
+2026-05-21 07:10:49 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti78af done — 0 thread(s)
+2026-05-21 07:10:49 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tii17l (kulineria) — "My Pizza and Pasta Run..."
+2026-05-21 07:10:49 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tii17l done — 0 thread(s)
+2026-05-21 07:10:49 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tizym0 (indotech) — "Suara alarm yang malah muncul di timer...."
+2026-05-21 07:10:50 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tiv0f4 (AdaIndonesiaCoy) — "Rambutanura springtails..."
+2026-05-21 07:10:50 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tizym0 done — 0 thread(s)
+2026-05-21 07:10:50 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tiv0f4 done — 0 thread(s)
+2026-05-21 07:10:51 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti2cu4 (Cekrek) — "Sunflower in the garden..."
+2026-05-21 07:10:51 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti2cu4 done — 0 thread(s)
+2026-05-21 07:10:51 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tigby7 (WkwkwkLand) — "roleplay jadi Bapak..."
+2026-05-21 07:10:52 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tigby7 done — 0 thread(s)
+2026-05-21 07:10:52 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti5x5b (indonesia) — "Prioritas saat ekonomi negara memburuk..."
+2026-05-21 07:10:52 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tia14x (indotech) — "pay to play songs on YouTube Music...."
+2026-05-21 07:10:53 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti5x5b done — 0 thread(s)
+2026-05-21 07:10:53 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tifm0m (jualbeliindonesia) — "WTS Truthear Nova (BNOB / Like New)..."
+2026-05-21 07:10:53 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tia14x done — 0 thread(s)
+2026-05-21 07:10:53 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tifm0m done — 0 thread(s)
+2026-05-21 07:10:54 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tiigrq (BaliTravelTips) — "Surfing October starting..."
+2026-05-21 07:10:54 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tiigrq done — 2 thread(s)
+2026-05-21 07:10:55 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tih1q5 (WkwkwkLand) — "Bro nonton jav 3 season..."
+2026-05-21 07:10:55 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1ti4dil (bali) — "What do foreigners get wrong?..."
+2026-05-21 07:10:55 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tiocph (bali) — "bali: local spots..."
+2026-05-21 07:10:55 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tih1q5 done — 0 thread(s)
+2026-05-21 07:10:56 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tiocph done — 1 thread(s)
+2026-05-21 07:10:56 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1ti4dil done — 9 thread(s)
+2026-05-21 07:10:56 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj7ao7 (indonesia) — "Wanted man apprehended at hotel in Limbang..."
+2026-05-21 07:10:56 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj7ao7 done — 0 thread(s)
+2026-05-21 07:10:57 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1timznb (indonesia) — "Prabowo Target Dolar Rp16.800-17.500 di Cetak Biru RAPB..."
+2026-05-21 07:10:58 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tihdie (WkwkwkLand) — "Bocor bocor bocor..."
+2026-05-21 07:10:58 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1timznb done — 0 thread(s)
+2026-05-21 07:10:58 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tioqe2 (indowibu) — "Nokia E63 Cosplay Photography..."
+2026-05-21 07:10:58 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tihdie done — 0 thread(s)
+2026-05-21 07:10:58 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tij99x (WkwkwkLand) — "Titik g-spot pria 🤭..."
+2026-05-21 07:10:59 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tioqe2 done — 0 thread(s)
+2026-05-21 07:10:59 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tij99x done — 0 thread(s)
+2026-05-21 07:11:00 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti9dgi (AdaIndonesiaCoy) — "Indonesia adalah salah satu negara mayoritas Islam yang..."
+2026-05-21 07:11:00 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tikhzi (AdaIndonesiaCoy) — "Ada website bandung coy..."
+2026-05-21 07:11:00 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tikhzi done — 0 thread(s)
+2026-05-21 07:11:01 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tigrpp (indowibu) — "MK mau ntr tapi udah gabisa @tentenchan25(x)..."
+2026-05-21 07:11:01 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti9dgi done — 0 thread(s)
+2026-05-21 07:11:01 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tipowo (WkwkwkLand) — "Banyak banget yang mau dibahas......."
+2026-05-21 07:11:01 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tigrpp done — 0 thread(s)
+2026-05-21 07:11:01 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:11:02 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tiiacm (indonesia) — "Jokes pos ronda..."
+2026-05-21 07:11:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:11:03 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tic74b (indonesiabebas) — "Wok lu masuk koran luar wok..."
+2026-05-21 07:11:03 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thtbs4 (Cekrek) — "Simpang Cikapayang (jalan Dago) Bandung..."
+2026-05-21 07:11:03 [INFO    ] crawl_pipeline.posts |   [hot] page: 100 new, 0 skipped | listing total: 400
+2026-05-21 07:11:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:11:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:11:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:11:04 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:11:05 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:11:05 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:11:06 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:11:06 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:11:07 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:11:09 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:11:09 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:11:10 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:11:10 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:11:14 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:11:15 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:11:16 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:11:16 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:11:17 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:11:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:11:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:11:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:11:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:11:25 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:11:32 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tipowo: Failed after 5 retries: https://www.reddit.com/r/WkwkwkLand/comments/1tipowo.json
+2026-05-21 07:11:32 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tipowo done — 0 thread(s)
+2026-05-21 07:11:34 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tiiacm: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1tiiacm.json
+2026-05-21 07:11:34 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tiiacm done — 0 thread(s)
+2026-05-21 07:11:34 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tii5wh (indotech) — "China banned Nvidia’s gaming chip during Jensen Huang’s..."
+2026-05-21 07:11:34 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thtbs4: Failed after 5 retries: https://www.reddit.com/r/Cekrek/comments/1thtbs4.json
+2026-05-21 07:11:34 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thtbs4 done — 0 thread(s)
+2026-05-21 07:11:34 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:11:34 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tic74b: Failed after 5 retries: https://www.reddit.com/r/indonesiabebas/comments/1tic74b.json
+2026-05-21 07:11:34 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tic74b done — 0 thread(s)
+2026-05-21 07:11:35 [ERROR   ] crawl_pipeline.posts |   [hot] Page fetch failed: Failed after 5 retries: https://www.reddit.com/user/chivalricsystems/m/indonesiasemua/hot/.json
+2026-05-21 07:11:35 [INFO    ] crawl_pipeline.posts | [PostsCrawl] Listing: new
+2026-05-21 07:11:35 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:11:36 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ticb5s (indowibu) — "Oh that's why i feel nostalgic..."
+2026-05-21 07:11:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:11:36 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tikrsm (bali) — "Bali: Entering the country with an engagement ring..."
+2026-05-21 07:11:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:11:36 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tib8x6 (indonesia) — "Prabowo Terbitkan PP, Ekspor Sawit hingga Batu Bara Har..."
+2026-05-21 07:11:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:11:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:11:37 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:11:38 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:11:38 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:11:39 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:11:41 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:11:42 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:11:42 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:11:43 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:11:43 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:11:47 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:11:48 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:11:48 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:11:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:11:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:11:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:11:56 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:11:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:11:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:11:58 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:12:05 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tii5wh: Failed after 5 retries: https://www.reddit.com/r/indotech/comments/1tii5wh.json
+2026-05-21 07:12:05 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tii5wh done — 0 thread(s)
+2026-05-21 07:12:06 [ERROR   ] crawl_pipeline.posts |   [new] Page fetch failed: Failed after 5 retries: https://www.reddit.com/user/chivalricsystems/m/indonesiasemua/new/.json
+2026-05-21 07:12:06 [INFO    ] crawl_pipeline.posts | [PostsCrawl] Listing: top
+2026-05-21 07:12:06 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:12:07 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ticb5s: Failed after 5 retries: https://www.reddit.com/r/indowibu/comments/1ticb5s.json
+2026-05-21 07:12:07 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ticb5s done — 0 thread(s)
+2026-05-21 07:12:07 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti6byg (indonesia) — "Cross-server blessings..."
+2026-05-21 07:12:07 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tikrsm: Failed after 5 retries: https://www.reddit.com/r/bali/comments/1tikrsm.json
+2026-05-21 07:12:07 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tikrsm done — 0 thread(s)
+2026-05-21 07:12:07 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:12:08 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tib8x6: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1tib8x6.json
+2026-05-21 07:12:08 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tib8x6 done — 0 thread(s)
+2026-05-21 07:12:08 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:12:09 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tio2nm (indonesia) — "Indonesia's new state capitalism shrinks its future - N..."
+2026-05-21 07:12:09 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:12:09 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thq8w1 (indocartalk) — "Chery q ev prebook. Bonus speaker TOA external buat ter..."
+2026-05-21 07:12:09 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:12:09 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:12:10 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tic66t (indonesia) — "Aku cinta rupiah lagu yang lahir saat krismon 1998..."
+2026-05-21 07:12:10 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:12:11 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:12:11 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:12:12 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:12:13 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:12:14 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:12:15 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:12:16 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:12:16 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:12:19 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:12:20 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:12:21 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:12:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:12:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:12:27 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:12:28 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:12:30 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:12:30 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:12:31 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:12:37 [ERROR   ] crawl_pipeline.posts |   [top] Page fetch failed: Failed after 5 retries: https://www.reddit.com/user/chivalricsystems/m/indonesiasemua/top/.json
+2026-05-21 07:12:37 [INFO    ] crawl_pipeline.posts | [PostsCrawl] Listing: rising
+2026-05-21 07:12:37 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:12:38 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti6byg: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1ti6byg.json
+2026-05-21 07:12:38 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti6byg done — 0 thread(s)
+2026-05-21 07:12:39 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:12:40 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tio2nm: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1tio2nm.json
+2026-05-21 07:12:40 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tio2nm done — 0 thread(s)
+2026-05-21 07:12:40 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tjclfm (WkwkwkLand) — "WIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII..."
+2026-05-21 07:12:40 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thq8w1: Failed after 5 retries: https://www.reddit.com/r/indocartalk/comments/1thq8w1.json
+2026-05-21 07:12:40 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thq8w1 done — 0 thread(s)
+2026-05-21 07:12:40 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:12:41 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tic66t: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1tic66t.json
+2026-05-21 07:12:41 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tic66t done — 0 thread(s)
+2026-05-21 07:12:42 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tifqlc (kulineria) — "Bagels, Solo..."
+2026-05-21 07:12:42 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:12:42 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tidkcx (WkwkwkLand) — "Prabowo, ahlinya yapping..."
+2026-05-21 07:12:42 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:12:43 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:12:43 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tic2qd (WkwkwkLand) — "Remember, kepemimpiman Prabowo blom nyampe 2 tahun 😭..."
+2026-05-21 07:12:43 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:12:44 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:12:44 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:12:45 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:12:45 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:12:47 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:12:48 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:12:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:12:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:12:50 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:12:53 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:12:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:12:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:12:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:12:58 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:13:01 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:13:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:13:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:13:04 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:13:08 [ERROR   ] crawl_pipeline.posts |   [rising] Page fetch failed: Failed after 5 retries: https://www.reddit.com/user/chivalricsystems/m/indonesiasemua/rising/.json
+2026-05-21 07:13:08 [INFO    ] crawl_pipeline.posts | [PostsCrawl] Cycle complete. New this cycle: 400
+2026-05-21 07:13:08 [INFO    ] crawl_pipeline.posts | [PostsCrawl] Done. Grand total new posts: 400
+2026-05-21 07:13:08 [INFO    ] crawl_pipeline | [Pipeline] Producer finished. 400 new posts discovered.
+2026-05-21 07:13:08 [INFO    ] crawl_pipeline | [Pipeline] Sending 4 sentinel(s) to workers...
+2026-05-21 07:13:08 [INFO    ] crawl_pipeline | [Pipeline] Waiting for workers to finish...
+2026-05-21 07:13:11 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tjclfm: Failed after 5 retries: https://www.reddit.com/r/WkwkwkLand/comments/1tjclfm.json
+2026-05-21 07:13:11 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tjclfm done — 0 thread(s)
+2026-05-21 07:13:13 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tifqlc: Failed after 5 retries: https://www.reddit.com/r/kulineria/comments/1tifqlc.json
+2026-05-21 07:13:13 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tifqlc done — 0 thread(s)
+2026-05-21 07:13:13 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tiv149 (WkwkwkLand) — "Maling apa yang bisa terbang?..."
+2026-05-21 07:13:13 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:13:13 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tidkcx: Failed after 5 retries: https://www.reddit.com/r/WkwkwkLand/comments/1tidkcx.json
+2026-05-21 07:13:13 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tidkcx done — 0 thread(s)
+2026-05-21 07:13:14 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tic2qd: Failed after 5 retries: https://www.reddit.com/r/WkwkwkLand/comments/1tic2qd.json
+2026-05-21 07:13:14 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tic2qd done — 0 thread(s)
+2026-05-21 07:13:15 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti8b6m (indonesiabebas) — "Dibagi biar ga cemburu..."
+2026-05-21 07:13:15 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:13:15 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj4bib (WkwkwkLand) — "Strategi yang bisa digunakan agar rupiah tidak lemah......"
+2026-05-21 07:13:15 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:13:16 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:13:16 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1qf7pub (aku_ddn) — "aku📳ddn..."
+2026-05-21 07:13:16 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:13:17 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:13:18 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:13:18 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:13:20 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:13:21 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:13:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:13:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:13:26 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:13:28 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:13:28 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:13:28 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:13:34 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:13:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:13:37 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:13:37 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:13:44 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tiv149: Failed after 5 retries: https://www.reddit.com/r/WkwkwkLand/comments/1tiv149.json
+2026-05-21 07:13:44 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tiv149 done — 0 thread(s)
+2026-05-21 07:13:46 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti8b6m: Failed after 5 retries: https://www.reddit.com/r/indonesiabebas/comments/1ti8b6m.json
+2026-05-21 07:13:46 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti8b6m done — 0 thread(s)
+2026-05-21 07:13:46 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tidzi1 (BaliTravelTips) — "Bali Visa Payment unsuccessful but debited from my acco..."
+2026-05-21 07:13:46 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:13:47 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1qf7pub: Failed after 5 retries: https://www.reddit.com/r/aku_ddn/comments/1qf7pub.json
+2026-05-21 07:13:47 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1qf7pub done — 0 thread(s)
+2026-05-21 07:13:47 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tj4bib: Failed after 5 retries: https://www.reddit.com/r/WkwkwkLand/comments/1tj4bib.json
+2026-05-21 07:13:47 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj4bib done — 0 thread(s)
+2026-05-21 07:13:48 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tip34q (indowibu) — ""I am Reincarnated as Aeng-du and Somehow, Jun Falls in..."
+2026-05-21 07:13:48 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:13:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:13:49 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti5c9z (kulineria) — "Bakmi niaga cabang sunter, jakarta..."
+2026-05-21 07:13:49 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tila69 (indonesia) — "Manusia Silver di Bali Todong Pengendara Pakai Pisau, P..."
+2026-05-21 07:13:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:13:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:13:50 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:13:51 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:13:51 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:13:53 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:13:54 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:13:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:13:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:13:59 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:14:01 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:14:02 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:14:02 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:14:07 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:14:09 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:14:10 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:14:10 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:14:17 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tidzi1: Failed after 5 retries: https://www.reddit.com/r/BaliTravelTips/comments/1tidzi1.json
+2026-05-21 07:14:17 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tidzi1 done — 0 thread(s)
+2026-05-21 07:14:19 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tip34q: Failed after 5 retries: https://www.reddit.com/r/indowibu/comments/1tip34q.json
+2026-05-21 07:14:19 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tip34q done — 0 thread(s)
+2026-05-21 07:14:19 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1thjuef (JudiSaham) — "Broksum KETR May 19th - Tembok 20k lot 585..."
+2026-05-21 07:14:19 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:14:20 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti5c9z: Failed after 5 retries: https://www.reddit.com/r/kulineria/comments/1ti5c9z.json
+2026-05-21 07:14:20 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti5c9z done — 0 thread(s)
+2026-05-21 07:14:20 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tila69: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1tila69.json
+2026-05-21 07:14:20 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tila69 done — 0 thread(s)
+2026-05-21 07:14:21 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tid9yq (indowibu) — "Rabu Rabun #18 : Sumika Fujimiya (Isekai Ojisan)..."
+2026-05-21 07:14:21 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:14:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:14:22 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tigty2 (AdaIndonesiaCoy) — "Go Internasyenel in a good way!..."
+2026-05-21 07:14:22 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tir7fo (indowibu) — "German boy trapped between british and french men (chn1..."
+2026-05-21 07:14:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:14:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:14:23 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:14:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:14:25 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:14:26 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:14:27 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:14:28 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:14:29 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:14:32 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:14:34 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:14:35 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:14:35 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:14:40 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:14:42 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:14:43 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:14:44 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:14:50 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thjuef: Failed after 5 retries: https://www.reddit.com/r/JudiSaham/comments/1thjuef.json
+2026-05-21 07:14:50 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1thjuef done — 0 thread(s)
+2026-05-21 07:14:52 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tid9yq: Failed after 5 retries: https://www.reddit.com/r/indowibu/comments/1tid9yq.json
+2026-05-21 07:14:52 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tid9yq done — 0 thread(s)
+2026-05-21 07:14:52 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tijvdk (jualbeliindonesia) — "WTS WD My Passport 4TB External HDD..."
+2026-05-21 07:14:52 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:14:53 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tigty2: Failed after 5 retries: https://www.reddit.com/r/AdaIndonesiaCoy/comments/1tigty2.json
+2026-05-21 07:14:53 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tigty2 done — 0 thread(s)
+2026-05-21 07:14:54 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tir7fo: Failed after 5 retries: https://www.reddit.com/r/indowibu/comments/1tir7fo.json
+2026-05-21 07:14:54 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tir7fo done — 0 thread(s)
+2026-05-21 07:14:54 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tibg9z (WkwkwkLand) — "rontok wak..."
+2026-05-21 07:14:54 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:14:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:14:55 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti4q9w (indonesia) — "Must have been the wind...."
+2026-05-21 07:14:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:14:56 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tjcq3z (indonesia) — "Polymarket: Prabowo Subianto out as President of Indone..."
+2026-05-21 07:14:56 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:14:56 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:14:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:14:58 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:14:59 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:15:01 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:15:01 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:15:02 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:15:05 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:15:07 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:15:08 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:15:08 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:15:13 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:15:15 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:15:16 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:15:17 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:15:23 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tijvdk: Failed after 5 retries: https://www.reddit.com/r/jualbeliindonesia/comments/1tijvdk.json
+2026-05-21 07:15:23 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tijvdk done — 0 thread(s)
+2026-05-21 07:15:25 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tibg9z: Failed after 5 retries: https://www.reddit.com/r/WkwkwkLand/comments/1tibg9z.json
+2026-05-21 07:15:25 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tibg9z done — 0 thread(s)
+2026-05-21 07:15:25 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tianvh (indonesiabebas) — "Seabank Pinjam, tidak tersedia di Aceh..."
+2026-05-21 07:15:26 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:15:26 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti4q9w: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1ti4q9w.json
+2026-05-21 07:15:26 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti4q9w done — 0 thread(s)
+2026-05-21 07:15:27 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tjcq3z: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1tjcq3z.json
+2026-05-21 07:15:27 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tjcq3z done — 0 thread(s)
+2026-05-21 07:15:27 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti906j (AdaIndonesiaCoy) — "Average Age People Lose Their Virginity..."
+2026-05-21 07:15:27 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:15:28 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:15:28 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tjckix (indonesia) — "Apa patokan Anda ketika bilang "lagi ga punya uang"?..."
+2026-05-21 07:15:28 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:15:29 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tjcfhu (indonesia) — "MUI Sebut Israel Brutal dan Langgar HAM Saat Tangkap 9 ..."
+2026-05-21 07:15:29 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:15:29 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:15:30 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:15:31 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:15:32 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:15:34 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:15:35 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:15:35 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:15:38 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:15:40 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:15:41 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:15:42 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:15:47 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:15:48 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:15:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:15:50 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:15:57 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tianvh: Failed after 5 retries: https://www.reddit.com/r/indonesiabebas/comments/1tianvh.json
+2026-05-21 07:15:57 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tianvh done — 0 thread(s)
+2026-05-21 07:15:58 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti906j: Failed after 5 retries: https://www.reddit.com/r/AdaIndonesiaCoy/comments/1ti906j.json
+2026-05-21 07:15:58 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti906j done — 0 thread(s)
+2026-05-21 07:15:59 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1thjn17 (indocartalk) — "Jangan lupa selalu cek tempat parkir siapa tau ada mobi..."
+2026-05-21 07:15:59 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:15:59 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tjckix: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1tjckix.json
+2026-05-21 07:15:59 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tjckix done — 0 thread(s)
+2026-05-21 07:16:00 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tjcfhu: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1tjcfhu.json
+2026-05-21 07:16:00 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tjcfhu done — 0 thread(s)
+2026-05-21 07:16:00 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti838n (AdaIndonesiaCoy) — "Kena?..."
+2026-05-21 07:16:00 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:16:01 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tieur8 (jualbeliindonesia) — "WTS Nothing ear (a)..."
+2026-05-21 07:16:01 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:16:01 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:16:02 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tiiljn (indonesiabebas) — "Indonesia unveils plan to centralise control of commodi..."
+2026-05-21 07:16:02 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:16:02 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:16:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:16:05 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:16:05 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:16:07 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:16:08 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:16:09 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:16:12 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:16:13 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:16:14 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:16:15 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:16:20 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:16:21 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:16:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:16:23 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:16:30 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thjn17: Failed after 5 retries: https://www.reddit.com/r/indocartalk/comments/1thjn17.json
+2026-05-21 07:16:30 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1thjn17 done — 0 thread(s)
+2026-05-21 07:16:31 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti838n: Failed after 5 retries: https://www.reddit.com/r/AdaIndonesiaCoy/comments/1ti838n.json
+2026-05-21 07:16:31 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti838n done — 0 thread(s)
+2026-05-21 07:16:32 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tic8aj (Perempuan) — "Asking Indonesian queer couple..."
+2026-05-21 07:16:32 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tieur8: Failed after 5 retries: https://www.reddit.com/r/jualbeliindonesia/comments/1tieur8.json
+2026-05-21 07:16:32 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tieur8 done — 0 thread(s)
+2026-05-21 07:16:32 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:16:33 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tigy6p (kulineria) — "Brillo Pizza, Pangandaran..."
+2026-05-21 07:16:33 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tiiljn: Failed after 5 retries: https://www.reddit.com/r/indonesiabebas/comments/1tiiljn.json
+2026-05-21 07:16:33 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tiiljn done — 0 thread(s)
+2026-05-21 07:16:33 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:16:34 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1iuoy23 (Pisang) — "Pisang..."
+2026-05-21 07:16:34 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:16:35 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:16:35 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tilkir (indonesiabebas) — "Manusia Silver di Bali Todong Pengendara Pakai Pisau, P..."
+2026-05-21 07:16:35 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:16:35 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:16:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:16:38 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:16:39 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:16:40 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:16:41 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:16:42 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:16:45 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:16:46 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:16:47 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:16:48 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:16:53 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:16:54 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:16:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:16:56 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:17:03 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tic8aj: Failed after 5 retries: https://www.reddit.com/r/Perempuan/comments/1tic8aj.json
+2026-05-21 07:17:03 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tic8aj done — 0 thread(s)
+2026-05-21 07:17:04 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tigy6p: Failed after 5 retries: https://www.reddit.com/r/kulineria/comments/1tigy6p.json
+2026-05-21 07:17:04 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tigy6p done — 0 thread(s)
+2026-05-21 07:17:05 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1iuoy23: Failed after 5 retries: https://www.reddit.com/r/Pisang/comments/1iuoy23.json
+2026-05-21 07:17:05 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1iuoy23 done — 0 thread(s)
+2026-05-21 07:17:05 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1thj6vn (indocartalk) — "Bocoran harga byd M6 PHEV..."
+2026-05-21 07:17:05 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:17:06 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tirt9a (indotech) — "OpenAI Is Preparing to File for an IPO Very Soon..."
+2026-05-21 07:17:06 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tilkir: Failed after 5 retries: https://www.reddit.com/r/indonesiabebas/comments/1tilkir.json
+2026-05-21 07:17:06 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tilkir done — 0 thread(s)
+2026-05-21 07:17:06 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:17:07 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tij0rt (indotech) — "Rekomendasi Service SMD/Micro-solder di Jakarta..."
+2026-05-21 07:17:07 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:17:08 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:17:08 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1ti9490 (indonesia) — "Purbaya Pangkas Anggaran MBG Rp67 Triliun..."
+2026-05-21 07:17:08 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:17:09 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:17:09 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:17:11 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:17:12 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:17:13 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:17:14 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:17:15 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:17:18 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:17:19 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:17:20 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:17:21 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:17:26 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:17:27 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:17:28 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:17:29 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:17:36 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thj6vn: Failed after 5 retries: https://www.reddit.com/r/indocartalk/comments/1thj6vn.json
+2026-05-21 07:17:36 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1thj6vn done — 0 thread(s)
+2026-05-21 07:17:37 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tirt9a: Failed after 5 retries: https://www.reddit.com/r/indotech/comments/1tirt9a.json
+2026-05-21 07:17:37 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tirt9a done — 0 thread(s)
+2026-05-21 07:17:38 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tij0rt: Failed after 5 retries: https://www.reddit.com/r/indotech/comments/1tij0rt.json
+2026-05-21 07:17:38 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tij0rt done — 0 thread(s)
+2026-05-21 07:17:38 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti7fkp (indonesiabebas) — "D. benar semua..."
+2026-05-21 07:17:38 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:17:39 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tift9f (AdaIndonesiaCoy) — "If Only..."
+2026-05-21 07:17:39 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti9490: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1ti9490.json
+2026-05-21 07:17:39 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1ti9490 done — 0 thread(s)
+2026-05-21 07:17:39 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:17:40 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tinbvm (indonesia) — "Ikuti Arahan Prabowo, TNI Gembleng 400 Karyawan BUMN al..."
+2026-05-21 07:17:40 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:17:41 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:17:41 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tiehjk (indonesia) — "Bank Sentral Naikkan BI Rate 50 Bps Jadi 5,25%..."
+2026-05-21 07:17:42 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:17:42 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:17:43 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:17:44 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:17:45 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:17:46 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:17:47 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:17:48 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:17:51 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:17:52 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:17:53 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:17:54 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:17:59 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:18:00 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:18:01 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:18:02 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:18:09 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti7fkp: Failed after 5 retries: https://www.reddit.com/r/indonesiabebas/comments/1ti7fkp.json
+2026-05-21 07:18:09 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti7fkp done — 0 thread(s)
+2026-05-21 07:18:10 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tift9f: Failed after 5 retries: https://www.reddit.com/r/AdaIndonesiaCoy/comments/1tift9f.json
+2026-05-21 07:18:10 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tift9f done — 0 thread(s)
+2026-05-21 07:18:11 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tinbvm: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1tinbvm.json
+2026-05-21 07:18:11 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tinbvm done — 0 thread(s)
+2026-05-21 07:18:11 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tigax5 (WkwkwkLand) — "😂😂..."
+2026-05-21 07:18:12 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:18:12 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ticwuf (indonesia) — "Prabowo Terima Tawaran AS, Bandara Kertajati Akan Jadi ..."
+2026-05-21 07:18:12 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tiehjk: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1tiehjk.json
+2026-05-21 07:18:12 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tiehjk done — 0 thread(s)
+2026-05-21 07:18:12 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:18:13 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tisptt (indonesia) — "Tim Pemburu Begal Tangkap 8 Tersangka..."
+2026-05-21 07:18:13 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:18:14 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:18:14 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tijhqt (indowibu) — ""Omae, Tanuki ni Naranee ka?" (Would you like to be a T..."
+2026-05-21 07:18:20 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:18:20 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:18:20 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:18:20 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:18:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:18:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:18:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:18:26 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:18:26 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:18:30 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:18:30 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:18:32 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:18:34 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:18:38 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:18:38 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:18:41 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:18:44 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tigax5: Failed after 5 retries: https://www.reddit.com/r/WkwkwkLand/comments/1tigax5.json
+2026-05-21 07:18:44 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tigax5 done — 0 thread(s)
+2026-05-21 07:18:46 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj5rcg (indonesia) — "Hello there Indonesian going to ask..."
+2026-05-21 07:18:46 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:18:48 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ticwuf: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1ticwuf.json
+2026-05-21 07:18:48 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ticwuf done — 0 thread(s)
+2026-05-21 07:18:48 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tisptt: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1tisptt.json
+2026-05-21 07:18:48 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tisptt done — 0 thread(s)
+2026-05-21 07:18:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:18:50 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tif8e6 (Jakarta) — "TheWeeknd Jakarta Tickets for sale..."
+2026-05-21 07:18:50 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tifq6t (indonesia) — "Prabowo: Kita Butuh Investasi dari Luar, tapi Tak Boleh..."
+2026-05-21 07:18:51 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:18:51 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:18:51 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tijhqt: Failed after 5 retries: https://www.reddit.com/r/indowibu/comments/1tijhqt.json
+2026-05-21 07:18:51 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tijhqt done — 0 thread(s)
+2026-05-21 07:18:53 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tigzzr (jualbeliindonesia) — "WTS Apple Watch 11 (BNIB)..."
+2026-05-21 07:18:53 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:18:53 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:18:53 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:18:53 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:18:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:18:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:18:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:18:59 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:18:59 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:19:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:19:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:19:05 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:19:07 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:19:11 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:19:11 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:19:14 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:19:17 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tj5rcg: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1tj5rcg.json
+2026-05-21 07:19:17 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj5rcg done — 0 thread(s)
+2026-05-21 07:19:19 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tid27l (indonesia) — "Prabowo Bentuk BUMN Khusus Ekspor Batubara &amp; Sawit ..."
+2026-05-21 07:19:19 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:19:21 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tif8e6: Failed after 5 retries: https://www.reddit.com/r/Jakarta/comments/1tif8e6.json
+2026-05-21 07:19:21 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tif8e6 done — 0 thread(s)
+2026-05-21 07:19:21 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tifq6t: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1tifq6t.json
+2026-05-21 07:19:21 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tifq6t done — 0 thread(s)
+2026-05-21 07:19:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:19:23 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti3oi8 (Cekrek) — "Day &amp; Nite at Stadium..."
+2026-05-21 07:19:23 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tg58hq (IndonesiaPics) — "Pink Perfection in the Garden 💖..."
+2026-05-21 07:19:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:19:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:19:24 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tigzzr: Failed after 5 retries: https://www.reddit.com/r/jualbeliindonesia/comments/1tigzzr.json
+2026-05-21 07:19:24 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tigzzr done — 0 thread(s)
+2026-05-21 07:19:26 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1ti8b9h (finansial) — "Ferry Latuhihin: Prediksi Saya Dollar Menuju Rp22,000–2..."
+2026-05-21 07:19:26 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:19:26 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:19:26 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:19:26 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:19:28 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:19:30 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:19:30 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:19:32 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:19:32 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:19:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:19:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:19:38 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:19:40 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:19:44 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:19:45 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:19:47 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:19:50 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tid27l: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1tid27l.json
+2026-05-21 07:19:50 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tid27l done — 0 thread(s)
+2026-05-21 07:19:52 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tia4un (BaliTravelTips) — "Suggestions for candle light dinner at uluwatu or kuta..."
+2026-05-21 07:19:52 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:19:54 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti3oi8: Failed after 5 retries: https://www.reddit.com/r/Cekrek/comments/1ti3oi8.json
+2026-05-21 07:19:54 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti3oi8 done — 0 thread(s)
+2026-05-21 07:19:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:19:55 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tg58hq: Failed after 5 retries: https://www.reddit.com/r/IndonesiaPics/comments/1tg58hq.json
+2026-05-21 07:19:55 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tg58hq done — 0 thread(s)
+2026-05-21 07:19:56 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tid0og (indowibu) — "Apakah mengabaikan manga/anime kanokari adalah keputusa..."
+2026-05-21 07:19:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:19:57 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti8b9h: Failed after 5 retries: https://www.reddit.com/r/finansial/comments/1ti8b9h.json
+2026-05-21 07:19:57 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1ti8b9h done — 0 thread(s)
+2026-05-21 07:19:57 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tieg4r (indotech) — "Kartu SIM tanpa masa aktif..."
+2026-05-21 07:19:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:19:59 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tijl8l (indowibu) — "Tying some loose end I guess..."
+2026-05-21 07:19:59 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:19:59 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:19:59 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:19:59 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:20:01 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tijl8l done — 0 thread(s)
+2026-05-21 07:20:03 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1ti9d9e (jualbeliindonesia) — "WTS Kemeja, celana, tas, etc...."
+2026-05-21 07:20:03 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tid0og done — 10 thread(s)
+2026-05-21 07:20:04 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1ti9d9e done — 0 thread(s)
+2026-05-21 07:20:04 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tieg4r done — 3 thread(s)
+2026-05-21 07:20:05 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tiq31g (WkwkwkLand) — "Yang gue kasian adalah, generasi muda pas gue udah tua...."
+2026-05-21 07:20:06 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tieezc (indowibu) — "Kalian punya ketertarikan buat cerita/jadi author fanfi..."
+2026-05-21 07:20:06 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tiq31g done — 0 thread(s)
+2026-05-21 07:20:06 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti8n9v (kulineria) — "Soto Dalbe, Pangeran kuah medok. 📍Jogja..."
+2026-05-21 07:20:06 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tia4un done — 1 thread(s)
+2026-05-21 07:20:06 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tieezc done — 4 thread(s)
+2026-05-21 07:20:06 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti8n9v done — 0 thread(s)
+2026-05-21 07:20:08 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti51ke (IndoGamer) — "Single-player enjoyer pengen coba game multiplayer..."
+2026-05-21 07:20:08 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1thvv13 (indotech) — "Ah hell nah kena lightsaber juga dong 😭 (Samsung A71)..."
+2026-05-21 07:20:08 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tifgob (finansial) — "USD tops out this year at?..."
+2026-05-21 07:20:08 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tic8qr (WkwkwkLand) — "Ngeri kali..."
+2026-05-21 07:20:08 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti51ke done — 19 thread(s)
+2026-05-21 07:20:08 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tifgob done — 4 thread(s)
+2026-05-21 07:20:08 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1thvv13 done — 0 thread(s)
+2026-05-21 07:20:08 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tic8qr done — 0 thread(s)
+2026-05-21 07:20:10 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj0m38 (WkwkwkLand) — "Yok pada kumpul yok..."
+2026-05-21 07:20:10 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tib5lu (AdaIndonesiaCoy) — "Kucing siapa woy…..."
+2026-05-21 07:20:10 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1thepsr (Cekrek) — "Mendung..."
+2026-05-21 07:20:10 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj0m38 done — 0 thread(s)
+2026-05-21 07:20:10 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tijqnf (finansial) — "Big 4 potential?..."
+2026-05-21 07:20:11 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tib5lu done — 0 thread(s)
+2026-05-21 07:20:11 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1thepsr done — 0 thread(s)
+2026-05-21 07:20:11 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tijqnf done — 3 thread(s)
+2026-05-21 07:20:12 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tj8iah (indonesia) — "Buat SIM legally or calo?..."
+2026-05-21 07:20:13 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1th68dp (indocartalk) — "Semua akan berurusan dengan taksi ijo pada akhirnya..."
+2026-05-21 07:20:13 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tiph1t (WkwkwkLand) — "we always have our "kecebur got" story..."
+2026-05-21 07:20:13 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tj8iah done — 8 thread(s)
+2026-05-21 07:20:13 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tie4o2 (jualbeliindonesia) — "WTS CPU Cooler Deepcool AK400 Digital..."
+2026-05-21 07:20:13 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1th68dp done — 0 thread(s)
+2026-05-21 07:20:13 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tiph1t done — 0 thread(s)
+2026-05-21 07:20:13 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tie4o2 done — 0 thread(s)
+2026-05-21 07:20:15 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti58dq (WkwkwkLand) — "meroket..."
+2026-05-21 07:20:15 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1ti7668 (WkwkwkLand) — "Orang yang gak berani ngomongin soal judol dan data lea..."
+2026-05-21 07:20:15 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tiby2f (WkwkwkLand) — "Prabowo: Banyak pemenang tender proyek yang di belakang..."
+2026-05-21 07:20:15 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti8dl4 (BaliTravelTips) — "Book flight to Bali with points (HELP) I’m looking to t..."
+2026-05-21 07:20:15 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti8dl4 done — 0 thread(s)
+2026-05-21 07:20:15 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tiby2f done — 0 thread(s)
+2026-05-21 07:20:16 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti58dq done — 0 thread(s)
+2026-05-21 07:20:16 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1ti7668 done — 0 thread(s)
+2026-05-21 07:20:17 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tint8e (IndoGamer) — "Haha, buat yang berpengalaman main Dokapon Kingdom, gim..."
+2026-05-21 07:20:17 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti5nvy (indotech) — "[Ask] Bagaimana pengalam kerja dengan India?..."
+2026-05-21 07:20:18 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tibdoz (AdaIndonesiaCoy) — "Having a weak currency as a komodo be like..."
+2026-05-21 07:20:18 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tint8e done — 0 thread(s)
+2026-05-21 07:20:18 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tibdoz done — 0 thread(s)
+2026-05-21 07:20:18 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti5nvy done — 8 thread(s)
+2026-05-21 07:20:18 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thgz72 (bali) — "Chemical on Bali airport gate chair destroyed my clothe..."
+2026-05-21 07:20:18 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thgz72 done — 0 thread(s)
+2026-05-21 07:20:20 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tierdb (WkwkwkLand) — "Bocor lagi?..."
+2026-05-21 07:20:20 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tie41f (WkwkwkLand) — "Oalah gitu toh alasannya..."
+2026-05-21 07:20:20 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti5hrt (AdaIndonesiaCoy) — "Chickens crossing the road..."
+2026-05-21 07:20:20 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tierdb done — 0 thread(s)
+2026-05-21 07:20:20 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tie41f done — 0 thread(s)
+2026-05-21 07:20:20 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti5hrt done — 0 thread(s)
+2026-05-21 07:20:20 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tikmbx (indonesia) — "Tanggapan Fadli Zon mengenai artikel dari The Economics..."
+2026-05-21 07:20:21 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tikmbx done — 0 thread(s)
+2026-05-21 07:20:22 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tiny21 (jualbeliindonesia) — "WTB PC Mid Range..."
+2026-05-21 07:20:22 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tijdop (indonesia) — "Masuk BJB, Susi Pudjiastuti Langsung Bidik Pasar Pinjol..."
+2026-05-21 07:20:22 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti5m00 (indonesiabebas) — "Kasian sapi saya pak..."
+2026-05-21 07:20:22 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tiny21 done — 0 thread(s)
+2026-05-21 07:20:23 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tijdop done — 0 thread(s)
+2026-05-21 07:20:23 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti5m00 done — 0 thread(s)
+2026-05-21 07:20:23 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tinrr4 (jualbeliindonesia) — "WTB 3090, tidak pakai mining..."
+2026-05-21 07:20:23 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tinrr4 done — 0 thread(s)
+2026-05-21 07:20:24 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tixlvv (indonesiabebas) — "What I would suggest to make our economic slightly bett..."
+2026-05-21 07:20:25 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tink0y (jualbeliindonesia) — "WTS Google Nest Mini..."
+2026-05-21 07:20:25 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tixlvv done — 0 thread(s)
+2026-05-21 07:20:25 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti6jwx (indonesia) — "Amnesty: Kritik Pemerintah Dibungkam Lewat Kampanye Dis..."
+2026-05-21 07:20:25 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tink0y done — 0 thread(s)
+2026-05-21 07:20:25 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti6jwx done — 0 thread(s)
+2026-05-21 07:20:25 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1ti85zc (indonesia) — "Purbaya Minta Publik Setop Salahkan MBG, Ungkap Upaya P..."
+2026-05-21 07:20:26 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1ti85zc done — 0 thread(s)
+2026-05-21 07:20:27 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tihpq1 (AdaIndonesiaCoy) — "Kids Magazine..."
+2026-05-21 07:20:27 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tid0ir (indotech) — "Pc stuck di POST no display no BIOS..."
+2026-05-21 07:20:27 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tihpq1 done — 0 thread(s)
+2026-05-21 07:20:27 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tie6u0 (WkwkwkLand) — "tuh liat yg lain merah kita ijo sendiri 🥰..."
+2026-05-21 07:20:27 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tid0ir done — 0 thread(s)
+2026-05-21 07:20:27 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tie6u0 done — 0 thread(s)
+2026-05-21 07:20:28 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thqkds (indotech) — "temenku keracunan vibe coding gara gara kebanyakan buka..."
+2026-05-21 07:20:29 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tih0px (indonesia) — "Pemerintah Impor 100 Ribu Tabung CNG 3 Kg dari China..."
+2026-05-21 07:20:29 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thqkds done — 12 thread(s)
+2026-05-21 07:20:29 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tilphd (indonesiabebas) — "Is This Organization Legit?..."
+2026-05-21 07:20:29 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tiilja (WkwkwkLand) — "Ngeri sangat..."
+2026-05-21 07:20:29 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tih0px done — 0 thread(s)
+2026-05-21 07:20:30 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tilphd done — 0 thread(s)
+2026-05-21 07:20:30 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tiilja done — 0 thread(s)
+2026-05-21 07:20:31 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thzio6 (BaliTravelTips) — "Getyourguide or Klook or private driver for day trips..."
+2026-05-21 07:20:31 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tib7pj (jualbeliindonesia) — "WTS Specialized Sirrus Elite..."
+2026-05-21 07:20:31 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thzio6 done — 3 thread(s)
+2026-05-21 07:20:32 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti8040 (indonesiabebas) — "Goto apa kabar?..."
+2026-05-21 07:20:32 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tiim8o (indonesia) — "TVRI Gandeng Fola Play, Perkuat Layanan Digital Siaran ..."
+2026-05-21 07:20:32 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tib7pj done — 0 thread(s)
+2026-05-21 07:20:32 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti8040 done — 0 thread(s)
+2026-05-21 07:20:32 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tiim8o done — 0 thread(s)
+2026-05-21 07:20:33 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tiah1q (WkwkwkLand) — "Ingat pacaran itu propaganda mossad..."
+2026-05-21 07:20:34 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti7q2d (WkwkwkLand) — "Ga juga..."
+2026-05-21 07:20:34 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tiah1q done — 0 thread(s)
+2026-05-21 07:20:34 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti7lrk (indotech) — "Whatsapp username reservation - Apakah penghuni sini ud..."
+2026-05-21 07:20:34 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti7q2d done — 0 thread(s)
+2026-05-21 07:20:34 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tilf83 (indotech) — "Sekedar pemikiran random, rasanya lebih bagus kalo prov..."
+2026-05-21 07:20:34 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti7lrk done — 0 thread(s)
+2026-05-21 07:20:34 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tilf83 done — 3 thread(s)
+2026-05-21 07:20:36 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj3xo0 (indonesia) — "21 May 2026 - Daily Chat Thread..."
+2026-05-21 07:20:36 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti9u6y (indowibu) — "Kuda Harian #654 (@Marghe_Bita)..."
+2026-05-21 07:20:36 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti9u6y done — 0 thread(s)
+2026-05-21 07:20:36 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tileg8 (WkwkwkLand) — "rupiah juga ikutan bangkit..."
+2026-05-21 07:20:36 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1timyvm (indonesia) — "Blak-Blakan! Ekonom Ferry Latuhihin &amp; Politisi Geri..."
+2026-05-21 07:20:37 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tileg8 done — 0 thread(s)
+2026-05-21 07:20:37 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1timyvm done — 0 thread(s)
+2026-05-21 07:20:38 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tho50j (indonesiabebas) — "Militer lebih baik fokus dengan satu hal saja: pertahan..."
+2026-05-21 07:20:38 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj3xo0 done — 27 thread(s)
+2026-05-21 07:20:39 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti9v72 (jualbeliindonesia) — "WTB Motor Second daerah palembang..."
+2026-05-21 07:20:39 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tigjo0 (WkwkwkLand) — "Panti Jompo Terbuka Buat Orang Ngelantur Kyk Lu Pak..."
+2026-05-21 07:20:39 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tho50j done — 0 thread(s)
+2026-05-21 07:20:39 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti9v72 done — 1 thread(s)
+2026-05-21 07:20:39 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tigjo0 done — 0 thread(s)
+2026-05-21 07:20:40 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tifmkq (indonesia) — "Apakah banyaknya perokok di Indonesia disebabkan oleh t..."
+2026-05-21 07:20:41 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tifmkq done — 0 thread(s)
+2026-05-21 07:20:41 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti3c1n (indonesiabebas) — "Permisi warga r/indonesiabebas, gw izin ngumumin dibuat..."
+2026-05-21 07:20:41 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tif12d (AdaIndonesiaCoy) — "Damn that's terrifying..."
+2026-05-21 07:20:41 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tia1hv (indotech) — "Wait wut? nanti bakal ada laptop intel lunar lake di le..."
+2026-05-21 07:20:41 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti3c1n done — 4 thread(s)
+2026-05-21 07:20:41 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tia1hv done — 0 thread(s)
+2026-05-21 07:20:41 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tif12d done — 0 thread(s)
+2026-05-21 07:20:43 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tiqhcj (indotech) — "AMD Ryzen 7 5800X3D 10th anniversary edition appears in..."
+2026-05-21 07:20:43 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti1bfc (indonesiabebas) — "Wok stok beras menipis..."
+2026-05-21 07:20:43 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tiqhcj done — 0 thread(s)
+2026-05-21 07:20:43 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti3012 (finansial) — "Apa dampak pelemahan rupiah terhadap kehidupan sehari-h..."
+2026-05-21 07:20:43 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tiizi1 (indonesiabebas) — "Withdraw Paypal ke Gopay..."
+2026-05-21 07:20:44 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tiizi1 done — 0 thread(s)
+2026-05-21 07:20:44 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti3012 done — 10 thread(s)
+2026-05-21 07:20:44 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti1bfc done — 0 thread(s)
+2026-05-21 07:20:45 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tj7wno (WkwkwkLand) — "Prabowo pernah jadi cover boy majalah Matra edisi 213 A..."
+2026-05-21 07:20:46 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tj7wno done — 0 thread(s)
+2026-05-21 07:20:46 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tilsnv (WkwkwkLand) — "cemas kau deek..."
+2026-05-21 07:20:46 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tilsnv done — 0 thread(s)
+2026-05-21 07:20:46 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tjab3r (indonesia) — "Bagaimana Indonesia?..."
+2026-05-21 07:20:46 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1thq6ld (indocartalk) — "Seputar Ganti Plat 5 Tahunan..."
+2026-05-21 07:20:47 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1thq6ld done — 2 thread(s)
+2026-05-21 07:20:47 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tjab3r done — 7 thread(s)
+2026-05-21 07:20:48 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thqgu6 (finansial) — "$146 Miliar, Tujuh Langkah: Di Balik Angka yang Cukup..."
+2026-05-21 07:20:48 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti1cbs (indowibu) — "Come watch fate..."
+2026-05-21 07:20:48 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti1cbs done — 0 thread(s)
+2026-05-21 07:20:48 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thqgu6 done — 0 thread(s)
+2026-05-21 07:20:49 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti8sv5 (WkwkwkLand) — "Lol .. lmao even..."
+2026-05-21 07:20:49 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tiewyo (indotech) — "Apakah router sim card 5g itu sama aja?..."
+2026-05-21 07:20:49 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tiewyo done — 2 thread(s)
+2026-05-21 07:20:49 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti8sv5 done — 0 thread(s)
+2026-05-21 07:20:50 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti14wa (indonesia) — "Lihat dia masih tersenyum..."
+2026-05-21 07:20:50 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thij13 (Cekrek) — "Air Terjun Cilik..."
+2026-05-21 07:20:50 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thij13 done — 0 thread(s)
+2026-05-21 07:20:51 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti14wa done — 0 thread(s)
+2026-05-21 07:20:51 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tig5si (indonesiabebas) — "apakah ada peraturan hukum yang melarang praktek sim c ..."
+2026-05-21 07:20:51 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tig5si done — 0 thread(s)
+2026-05-21 07:20:51 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti1gyu (BaliTravelTips) — "Itinerary Review + Suggestions..."
+2026-05-21 07:20:52 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti1gyu done — 1 thread(s)
+2026-05-21 07:20:52 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1ti57it (indotech) — "Login Whatsapp web redirect to Facebook..."
+2026-05-21 07:20:53 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tigcgs (WkwkwkLand) — "🙃🙂..."
+2026-05-21 07:20:53 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1ti57it done — 0 thread(s)
+2026-05-21 07:20:53 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tigcgs done — 0 thread(s)
+2026-05-21 07:20:53 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1thao89 (indotech) — "jiwa gratisannya kuat banget..."
+2026-05-21 07:20:54 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti199d (BaliTravelTips) — "Gluten free in Bali..."
+2026-05-21 07:20:54 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti199d done — 2 thread(s)
+2026-05-21 07:20:54 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1thao89 done — 0 thread(s)
+2026-05-21 07:20:55 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1ti186x (BaliTravelTips) — "Seminyak or Jimbaran...."
+2026-05-21 07:20:55 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tiip1x (WkwkwkLand) — "Pusing dengan semua ini......."
+2026-05-21 07:20:55 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1ti186x done — 2 thread(s)
+2026-05-21 07:20:55 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tiip1x done — 0 thread(s)
+2026-05-21 07:20:56 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ths6mx (Cekrek) — "Dairyland Theme Park Prigen..."
+2026-05-21 07:20:56 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti0r3l (BaliTravelTips) — "Retreat or private lessons in Bali?..."
+2026-05-21 07:20:56 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ths6mx done — 0 thread(s)
+2026-05-21 07:20:56 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti0r3l done — 0 thread(s)
+2026-05-21 07:20:57 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tiezg0 (WkwkwkLand) — "DASAR ASENG..."
+2026-05-21 07:20:57 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1thuhuq (AdaIndonesiaCoy) — "This guy assaulting the woman did not account for flyin..."
+2026-05-21 07:20:57 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tiezg0 done — 0 thread(s)
+2026-05-21 07:20:58 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1thuhuq done — 0 thread(s)
+2026-05-21 07:20:58 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti6hqn (indonesia) — "Media Asing Sorot Kebijakan Prabowo soal Rupiah Melemah..."
+2026-05-21 07:20:58 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tidpvz (indonesia) — "Eps 1014 | PELECEHAN DI PESANTREN BERLANJUT. BENARKAH T..."
+2026-05-21 07:20:59 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti6hqn done — 0 thread(s)
+2026-05-21 07:20:59 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tidpvz done — 0 thread(s)
+2026-05-21 07:20:59 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thds4l (kulineria) — "Mie Babi Tepi Sawah, Sukoharjo..."
+2026-05-21 07:21:00 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tigyrs (jualbeliindonesia) — "WTS Original Goodsfun Wuthering Waves Cube Blindbox - C..."
+2026-05-21 07:21:00 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tigyrs done — 0 thread(s)
+2026-05-21 07:21:00 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thds4l done — 0 thread(s)
+2026-05-21 07:21:01 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti4kcj (indonesia) — "FULL! Menkeu Purbaya Klaim Ekonomi RI Tetap Kuat: Kalau..."
+2026-05-21 07:21:01 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti575f (BaliTravelTips) — "Moving to Bali - Neighborhoods &amp; Rentals?..."
+2026-05-21 07:21:01 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti4kcj done — 0 thread(s)
+2026-05-21 07:21:01 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti575f done — 0 thread(s)
+2026-05-21 07:21:02 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti3dmg (indotech) — "A New Cheapo Intel Laptop Outperforms the MacBook Neo. ..."
+2026-05-21 07:21:02 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1ti68kz (AdaIndonesiaCoy) — "main prosotan coy..."
+2026-05-21 07:21:02 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1ti68kz done — 0 thread(s)
+2026-05-21 07:21:02 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:21:03 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1thit2e (indowibu) — "Permisi warga r/indowibu, berhubung sekarang ada kontro..."
+2026-05-21 07:21:03 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tis7hg (IndoGamer) — "“My son will understand”..."
+2026-05-21 07:21:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:21:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:21:04 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thrcfg (Cekrek) — "Mobil Gus Akira Nakai..."
+2026-05-21 07:21:04 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:21:05 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:21:05 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:21:06 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:21:07 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:21:09 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:21:10 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:21:10 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:21:11 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:21:15 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:21:16 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:21:16 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:21:17 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:21:23 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:21:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:21:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:21:25 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:21:33 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti3dmg: Failed after 5 retries: https://www.reddit.com/r/indotech/comments/1ti3dmg.json
+2026-05-21 07:21:33 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti3dmg done — 0 thread(s)
+2026-05-21 07:21:34 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thit2e: Failed after 5 retries: https://www.reddit.com/r/indowibu/comments/1thit2e.json
+2026-05-21 07:21:34 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1thit2e done — 0 thread(s)
+2026-05-21 07:21:34 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tis7hg: Failed after 5 retries: https://www.reddit.com/r/IndoGamer/comments/1tis7hg.json
+2026-05-21 07:21:34 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tis7hg done — 0 thread(s)
+2026-05-21 07:21:35 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1thief0 (IndoGamer) — "Jalan malam-malam di NTE..."
+2026-05-21 07:21:35 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thrcfg: Failed after 5 retries: https://www.reddit.com/r/Cekrek/comments/1thrcfg.json
+2026-05-21 07:21:35 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thrcfg done — 0 thread(s)
+2026-05-21 07:21:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:21:36 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tib9b2 (indonesia) — "The Guardian view on domestic workers: Indonesia shows ..."
+2026-05-21 07:21:36 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1thk5a7 (indowibu) — "Waduh kok mirip..."
+2026-05-21 07:21:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:21:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:21:37 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thdnwm (Perempuan) — "Sepatu custom satuan?..."
+2026-05-21 07:21:38 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:21:38 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:21:38 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:21:39 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:21:40 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:21:42 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:21:43 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:21:43 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:21:44 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:21:48 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:21:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:21:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:21:51 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:21:56 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:21:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:21:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:21:59 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:22:06 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thief0: Failed after 5 retries: https://www.reddit.com/r/IndoGamer/comments/1thief0.json
+2026-05-21 07:22:06 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1thief0 done — 0 thread(s)
+2026-05-21 07:22:07 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tib9b2: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1tib9b2.json
+2026-05-21 07:22:07 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tib9b2 done — 0 thread(s)
+2026-05-21 07:22:07 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thk5a7: Failed after 5 retries: https://www.reddit.com/r/indowibu/comments/1thk5a7.json
+2026-05-21 07:22:07 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1thk5a7 done — 0 thread(s)
+2026-05-21 07:22:08 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tifn3s (jualbeliindonesia) — "WTS Rexus Daxa Air IV (minus box dan kabel)..."
+2026-05-21 07:22:09 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thdnwm: Failed after 5 retries: https://www.reddit.com/r/Perempuan/comments/1thdnwm.json
+2026-05-21 07:22:09 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thdnwm done — 0 thread(s)
+2026-05-21 07:22:09 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:22:09 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tifzx3 (indotech) — "Redmi 4 Prime Nganggur, dibuat apa?..."
+2026-05-21 07:22:09 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tilk2z (WkwkwkLand) — "one for all core..."
+2026-05-21 07:22:09 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:22:09 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:22:11 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thszp0 (IndoGamer) — "Komodos lebih pilih eastern atau western game untuk kon..."
+2026-05-21 07:22:11 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:22:11 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:22:12 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:22:12 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:22:13 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:22:15 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:22:16 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:22:16 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:22:18 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:22:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:22:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:22:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:22:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:22:30 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:22:30 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:22:30 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:22:32 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:22:40 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tifn3s: Failed after 5 retries: https://www.reddit.com/r/jualbeliindonesia/comments/1tifn3s.json
+2026-05-21 07:22:40 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tifn3s done — 0 thread(s)
+2026-05-21 07:22:40 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tifzx3: Failed after 5 retries: https://www.reddit.com/r/indotech/comments/1tifzx3.json
+2026-05-21 07:22:40 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tifzx3 done — 0 thread(s)
+2026-05-21 07:22:40 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tilk2z: Failed after 5 retries: https://www.reddit.com/r/WkwkwkLand/comments/1tilk2z.json
+2026-05-21 07:22:40 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tilk2z done — 0 thread(s)
+2026-05-21 07:22:42 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1thj49g (WkwkwkLand) — "Dont breed if u cant feed..."
+2026-05-21 07:22:42 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:22:42 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thszp0: Failed after 5 retries: https://www.reddit.com/r/IndoGamer/comments/1thszp0.json
+2026-05-21 07:22:42 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thszp0 done — 0 thread(s)
+2026-05-21 07:22:42 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti39rv (indonesia) — "KSAD: Tak Ada Instruksi Membubarkan Nobar Film Pesta Ba..."
+2026-05-21 07:22:42 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1thk0k5 (indonesia) — "Sedang meratapi nasib @Cutelight comic..."
+2026-05-21 07:22:42 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:22:42 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:22:44 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thuy2w (indowibu) — ""Nikkei reports on a survey finding that 90% of foreign..."
+2026-05-21 07:22:44 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:22:44 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:22:45 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:22:45 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:22:47 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:22:48 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:22:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:22:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:22:51 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:22:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:22:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:22:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:22:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:23:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:23:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:23:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:23:05 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:23:13 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thj49g: Failed after 5 retries: https://www.reddit.com/r/WkwkwkLand/comments/1thj49g.json
+2026-05-21 07:23:13 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1thj49g done — 0 thread(s)
+2026-05-21 07:23:13 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti39rv: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1ti39rv.json
+2026-05-21 07:23:13 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti39rv done — 0 thread(s)
+2026-05-21 07:23:13 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thk0k5: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1thk0k5.json
+2026-05-21 07:23:13 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1thk0k5 done — 0 thread(s)
+2026-05-21 07:23:15 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1thn7lp (WkwkwkLand) — "ga join brics btw..."
+2026-05-21 07:23:15 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:23:15 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thuy2w: Failed after 5 retries: https://www.reddit.com/r/indowibu/comments/1thuy2w.json
+2026-05-21 07:23:15 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thuy2w done — 0 thread(s)
+2026-05-21 07:23:15 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ticepg (bali) — "are snake bites common..."
+2026-05-21 07:23:15 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti4ne2 (Bandung) — "A Blossom in Waiting 🤍🌿..."
+2026-05-21 07:23:15 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:23:16 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:23:17 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tgf9l7 (JudiSaham) — "Orang desa ga pake IHSG..."
+2026-05-21 07:23:17 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:23:17 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:23:18 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:23:18 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:23:20 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:23:21 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:23:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:23:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:23:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:23:28 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:23:28 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:23:29 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:23:30 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:23:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:23:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:23:37 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:23:38 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:23:46 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thn7lp: Failed after 5 retries: https://www.reddit.com/r/WkwkwkLand/comments/1thn7lp.json
+2026-05-21 07:23:46 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1thn7lp done — 0 thread(s)
+2026-05-21 07:23:46 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ticepg: Failed after 5 retries: https://www.reddit.com/r/bali/comments/1ticepg.json
+2026-05-21 07:23:46 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ticepg done — 0 thread(s)
+2026-05-21 07:23:47 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti4ne2: Failed after 5 retries: https://www.reddit.com/r/Bandung/comments/1ti4ne2.json
+2026-05-21 07:23:47 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti4ne2 done — 0 thread(s)
+2026-05-21 07:23:48 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tighow (WkwkwkLand) — "Terlalu frontal Pak 😹..."
+2026-05-21 07:23:48 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:23:48 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tgf9l7: Failed after 5 retries: https://www.reddit.com/r/JudiSaham/comments/1tgf9l7.json
+2026-05-21 07:23:48 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tgf9l7 done — 0 thread(s)
+2026-05-21 07:23:48 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1ti9wc5 (finansial) — "Seberapa Aman USDT..."
+2026-05-21 07:23:48 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:23:49 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti6yoa (AdaIndonesiaCoy) — "Ada Indonesia Coy..."
+2026-05-21 07:23:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:23:50 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1ticukp (IndoGamer) — "Flydigi direwolf 4 vs vader 5 pro..."
+2026-05-21 07:23:50 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:23:50 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:23:51 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:23:51 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:23:53 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:23:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:23:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:23:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:23:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:24:01 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:24:01 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:24:02 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:24:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:24:09 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:24:10 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:24:10 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:24:11 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:24:19 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tighow: Failed after 5 retries: https://www.reddit.com/r/WkwkwkLand/comments/1tighow.json
+2026-05-21 07:24:19 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tighow done — 0 thread(s)
+2026-05-21 07:24:20 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti9wc5: Failed after 5 retries: https://www.reddit.com/r/finansial/comments/1ti9wc5.json
+2026-05-21 07:24:20 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1ti9wc5 done — 0 thread(s)
+2026-05-21 07:24:20 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti6yoa: Failed after 5 retries: https://www.reddit.com/r/AdaIndonesiaCoy/comments/1ti6yoa.json
+2026-05-21 07:24:20 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti6yoa done — 0 thread(s)
+2026-05-21 07:24:21 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ticukp: Failed after 5 retries: https://www.reddit.com/r/IndoGamer/comments/1ticukp.json
+2026-05-21 07:24:21 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1ticukp done — 0 thread(s)
+2026-05-21 07:24:21 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1thftb8 (indonesiabebas) — "I'm tired with this guy, man. He is stuck in the cold-w..."
+2026-05-21 07:24:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:24:22 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tiifl9 (AdaIndonesiaCoy) — "......"
+2026-05-21 07:24:22 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tio31k (finansial) — "Form Asuransi Jiwa..."
+2026-05-21 07:24:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:24:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:24:23 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thbb2h (indocartalk) — "WDYT mobil listrik as "genset rumah" is not widely know..."
+2026-05-21 07:24:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:24:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:24:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:24:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:24:26 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:24:28 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:24:28 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:24:29 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:24:30 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:24:34 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:24:35 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:24:35 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:24:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:24:42 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:24:43 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:24:43 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:24:44 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:24:52 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thftb8: Failed after 5 retries: https://www.reddit.com/r/indonesiabebas/comments/1thftb8.json
+2026-05-21 07:24:52 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1thftb8 done — 0 thread(s)
+2026-05-21 07:24:53 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tio31k: Failed after 5 retries: https://www.reddit.com/r/finansial/comments/1tio31k.json
+2026-05-21 07:24:53 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tio31k done — 0 thread(s)
+2026-05-21 07:24:53 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tiifl9: Failed after 5 retries: https://www.reddit.com/r/AdaIndonesiaCoy/comments/1tiifl9.json
+2026-05-21 07:24:53 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tiifl9 done — 0 thread(s)
+2026-05-21 07:24:54 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thbb2h: Failed after 5 retries: https://www.reddit.com/r/indocartalk/comments/1thbb2h.json
+2026-05-21 07:24:54 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thbb2h done — 0 thread(s)
+2026-05-21 07:24:54 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1thhb9d (Cekrek) — "Perkutut..."
+2026-05-21 07:24:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:24:55 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti95pq (indonesiabebas) — "Komdigi Godok Kewajiban Nomor Telepon untuk Akun Media ..."
+2026-05-21 07:24:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:24:55 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1thk34y (indonesiabebas) — "Brace yourself tempe tipis..."
+2026-05-21 07:24:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:24:56 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thk4a2 (indonesia) — "Lengang. Hukum tabur tuai itu nyata...."
+2026-05-21 07:24:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:24:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:24:57 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:24:58 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:24:59 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:25:01 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:25:01 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:25:02 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:25:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:25:07 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:25:08 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:25:08 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:25:10 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:25:16 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:25:16 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:25:17 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:25:18 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:25:26 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thhb9d: Failed after 5 retries: https://www.reddit.com/r/Cekrek/comments/1thhb9d.json
+2026-05-21 07:25:26 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1thhb9d done — 0 thread(s)
+2026-05-21 07:25:26 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti95pq: Failed after 5 retries: https://www.reddit.com/r/indonesiabebas/comments/1ti95pq.json
+2026-05-21 07:25:26 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti95pq done — 0 thread(s)
+2026-05-21 07:25:27 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thk34y: Failed after 5 retries: https://www.reddit.com/r/indonesiabebas/comments/1thk34y.json
+2026-05-21 07:25:27 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1thk34y done — 0 thread(s)
+2026-05-21 07:25:28 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1thmeiz (BaliTravelTips) — "Stay advice..."
+2026-05-21 07:25:28 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:25:28 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thk4a2: Failed after 5 retries: https://www.reddit.com/r/indonesia/comments/1thk4a2.json
+2026-05-21 07:25:28 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thk4a2 done — 0 thread(s)
+2026-05-21 07:25:28 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1thkc4f (Cekrek) — "Nissan GT-R Paul Walker..."
+2026-05-21 07:25:28 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:25:29 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1thmxcz (jualbeliindonesia) — "WTS Limited Slot Commission..."
+2026-05-21 07:25:29 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:25:30 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1ticjqq (jualbeliindonesia) — "WTS Rice Cooker Tefal..."
+2026-05-21 07:25:30 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:25:30 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:25:30 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:25:31 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:25:32 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:25:34 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:25:35 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:25:35 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:25:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:25:40 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:25:41 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:25:41 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:25:43 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:25:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:25:49 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:25:50 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:25:51 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:25:59 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thmeiz: Failed after 5 retries: https://www.reddit.com/r/BaliTravelTips/comments/1thmeiz.json
+2026-05-21 07:25:59 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1thmeiz done — 0 thread(s)
+2026-05-21 07:25:59 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thkc4f: Failed after 5 retries: https://www.reddit.com/r/Cekrek/comments/1thkc4f.json
+2026-05-21 07:25:59 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1thkc4f done — 0 thread(s)
+2026-05-21 07:26:00 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thmxcz: Failed after 5 retries: https://www.reddit.com/r/jualbeliindonesia/comments/1thmxcz.json
+2026-05-21 07:26:00 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1thmxcz done — 0 thread(s)
+2026-05-21 07:26:01 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti6abx (finansial) — "How to sell ruko..."
+2026-05-21 07:26:01 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:26:01 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ticjqq: Failed after 5 retries: https://www.reddit.com/r/jualbeliindonesia/comments/1ticjqq.json
+2026-05-21 07:26:01 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1ticjqq done — 0 thread(s)
+2026-05-21 07:26:01 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti70vl (WkwkwkLand) — "Bang apakah si Dr. Ambatukam lebih bagus untuk presiden..."
+2026-05-21 07:26:01 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:26:02 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tgrq3r (Perempuan) — "jilbab itu cantik, tapi bikin capek..."
+2026-05-21 07:26:02 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:26:03 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thecgs (kulineria) — "Burger Showdown..."
+2026-05-21 07:26:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:26:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:26:03 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:26:04 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:26:05 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:26:07 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:26:08 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:26:08 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:26:09 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:26:13 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:26:14 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:26:14 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:26:16 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:26:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:26:22 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:26:23 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:26:24 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:26:32 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti6abx: Failed after 5 retries: https://www.reddit.com/r/finansial/comments/1ti6abx.json
+2026-05-21 07:26:32 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti6abx done — 0 thread(s)
+2026-05-21 07:26:32 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti70vl: Failed after 5 retries: https://www.reddit.com/r/WkwkwkLand/comments/1ti70vl.json
+2026-05-21 07:26:32 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti70vl done — 0 thread(s)
+2026-05-21 07:26:33 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1tgrq3r: Failed after 5 retries: https://www.reddit.com/r/Perempuan/comments/1tgrq3r.json
+2026-05-21 07:26:33 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tgrq3r done — 0 thread(s)
+2026-05-21 07:26:34 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1ti96k4 (indotech) — "Komdigi Godok Kewajiban Nomor Telepon untuk Akun Media ..."
+2026-05-21 07:26:34 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1thecgs: Failed after 5 retries: https://www.reddit.com/r/kulineria/comments/1thecgs.json
+2026-05-21 07:26:34 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thecgs done — 0 thread(s)
+2026-05-21 07:26:34 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Received sentinel. Exiting.
+2026-05-21 07:26:34 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:26:35 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Received sentinel. Exiting.
+2026-05-21 07:26:35 [INFO    ] crawl_pipeline |   Worker CommentWorker-0 exited (code=0)
+2026-05-21 07:26:36 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Received sentinel. Exiting.
+2026-05-21 07:26:36 [INFO    ] crawl_pipeline |   Worker CommentWorker-1 exited (code=0)
+2026-05-21 07:26:36 [INFO    ] crawl_pipeline |   Worker CommentWorker-2 exited (code=0)
+2026-05-21 07:26:36 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:26:41 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:26:47 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:26:55 [WARNING ] crawl_pipeline.comments | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:27:05 [ERROR   ] crawl_pipeline.comments | Could not fetch comments for post 1ti96k4: Failed after 5 retries: https://www.reddit.com/r/indotech/comments/1ti96k4.json
+2026-05-21 07:27:05 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1ti96k4 done — 0 thread(s)
+2026-05-21 07:27:07 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Received sentinel. Exiting.
+2026-05-21 07:27:07 [INFO    ] crawl_pipeline |   Worker CommentWorker-3 exited (code=0)
+2026-05-21 07:27:07 [INFO    ] crawl_pipeline | [Pipeline] Steps 1+2 complete in 1091.1s
+2026-05-21 07:27:07 [INFO    ] crawl_pipeline | 
+         (waiting 3s before Step 3)
+2026-05-21 07:27:10 [INFO    ] crawl_pipeline | [Step 3] Running DataProcessing (UltraChat format)...
+2026-05-21 07:27:10 [INFO    ] crawl_pipeline | [Pipeline] Step 3 complete in 0.2s
+2026-05-21 07:27:10 [INFO    ] crawl_pipeline | 
+============================================================
+2026-05-21 07:27:10 [INFO    ] crawl_pipeline |   Pipeline complete
+2026-05-21 07:27:10 [INFO    ] crawl_pipeline |   Posts discovered        : 400
+2026-05-21 07:27:10 [INFO    ] crawl_pipeline |   DB status               : {'done': 400}
+2026-05-21 07:27:10 [INFO    ] crawl_pipeline |   Dataset v1 size         : 222
+2026-05-21 07:27:10 [INFO    ] crawl_pipeline |   Dataset v2 size         : 225
+2026-05-21 07:27:10 [INFO    ] crawl_pipeline |   Total time              : 1094.3s
+2026-05-21 07:27:10 [INFO    ] crawl_pipeline |   Summary saved to        : DataOutput/pipeline_summary.json
+2026-05-21 07:27:10 [INFO    ] crawl_pipeline | ============================================================
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline | ============================================================
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline |   Reddit Crawl Pipeline (producer-consumer)
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline |   Started : 2026-05-21 07:30:41 UTC
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline |   Workers : 4
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline |   Listings: hot, new, top, rising
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline | ============================================================
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline | 
+[Step 1] Starting 4 comment worker(s)...
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline | [Step 2] Starting post producer (crawl_posts)...
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline |   Worker 0 started (pid=2013037)
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline |   Worker 1 started (pid=2013038)
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline |   Worker 2 started (pid=2013039)
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Started.
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline |   Worker 3 started (pid=2013040)
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline.posts | [PostsCrawl] Listing: hot
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline.posts |   Resuming hot from cursor: t3_1ti96k4
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Started.
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Started.
+2026-05-21 07:30:41 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Started.
+2026-05-21 07:30:42 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1thlbsk (AdaIndonesiaCoy) — "WCGW trying to intimidate shopkeeper..."
+2026-05-21 07:30:42 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thnqbs (BaliTravelTips) — "Electronic Store to buy DJI action cam..."
+2026-05-21 07:30:42 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1ti38ud (indonesiabebas) — "KSAD: Tak Ada Instruksi Membubarkan Nobar Film Pesta Ba..."
+2026-05-21 07:30:42 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1thg5d8 (indowibu) — "Regarding previous JAV/Porn ban announcement..."
+2026-05-21 07:30:42 [INFO    ] crawl_pipeline.posts |   [hot] page: 10 new, 0 skipped | listing total: 10
+2026-05-21 07:30:42 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thnqbs done — 1 thread(s)
+2026-05-21 07:30:42 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1ti38ud done — 0 thread(s)
+2026-05-21 07:30:42 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1thg5d8 done — 9 thread(s)
+2026-05-21 07:30:43 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1thlbsk done — 0 thread(s)
+2026-05-21 07:30:43 [INFO    ] crawl_pipeline.posts | [PostsCrawl] Listing: new
+2026-05-21 07:30:43 [INFO    ] crawl_pipeline.posts |   [new] page: 4 new, 6 skipped | listing total: 4
+2026-05-21 07:30:44 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thvrtw (WkwkwkLand) — "Rupiah according to our neighbor..."
+2026-05-21 07:30:44 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1thrd8v (jualbeliindonesia) — "WTS Barrbone Mechanical Keyboard Koodo Solar..."
+2026-05-21 07:30:44 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1thl78l (indonesiabebas) — "Pesta Babi: Kolonialisme di Zaman Kita (Full Movie)..."
+2026-05-21 07:30:45 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1thrd8v done — 0 thread(s)
+2026-05-21 07:30:45 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thvrtw done — 0 thread(s)
+2026-05-21 07:30:45 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1thamdl (IndoGamer) — "Ati-Ati Bang Kalo Ngomong, Ntar Kedenger Lord Gaben..."
+2026-05-21 07:30:45 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1thl78l done — 0 thread(s)
+2026-05-21 07:30:45 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1thamdl done — 0 thread(s)
+2026-05-21 07:30:45 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 6 skipped | listing total: 4
+2026-05-21 07:30:47 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tho2m8 (indonesia) — "Tekan Tawuran, Pramono Resmikan Ring Tinju Kolong Fly O..."
+2026-05-21 07:30:47 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1thdjdx (Bandung) — "pretty much..."
+2026-05-21 07:30:47 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 6 skipped | listing total: 4
+2026-05-21 07:30:47 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tjcvqt (indonesia) — "Kata kawan gua, mau pilih 01, 02, ato 03, Indonesia tet..."
+2026-05-21 07:30:47 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1thdjdx done — 0 thread(s)
+2026-05-21 07:30:47 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tjcur5 (indonesia) — "Prabowo: Hati Saya Pilu karena Kritik PDIP Keras Banget..."
+2026-05-21 07:30:47 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tjcvqt done — 0 thread(s)
+2026-05-21 07:30:47 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tho2m8 done — 0 thread(s)
+2026-05-21 07:30:47 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tjcur5 done — 0 thread(s)
+2026-05-21 07:30:48 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 6 skipped | listing total: 4
+2026-05-21 07:30:49 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tjcupc (indonesia) — "IHSG hari ini turun -3.6% ke 6099.12..."
+2026-05-21 07:30:49 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tjcr53 (Cekrek) — "Kucing di tempat penginapan..."
+2026-05-21 07:30:49 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tjcupc done — 0 thread(s)
+2026-05-21 07:30:49 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tjcr53 done — 0 thread(s)
+2026-05-21 07:30:50 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 6 skipped | listing total: 4
+2026-05-21 07:30:51 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 6 skipped | listing total: 4
+2026-05-21 07:30:53 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 6 skipped | listing total: 4
+2026-05-21 07:30:54 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 6 skipped | listing total: 4
+2026-05-21 07:30:56 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 6 skipped | listing total: 4
+2026-05-21 07:30:58 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 6 skipped | listing total: 4
+2026-05-21 07:30:59 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 6 skipped | listing total: 4
+2026-05-21 07:31:01 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tj7agb (indonesia) — "Langkah-langkah menuju Indonesia Maju..."
+2026-05-21 07:31:01 [INFO    ] crawl_pipeline.posts |   [new] page: 1 new, 5 skipped | listing total: 5
+2026-05-21 07:31:02 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tj7agb done — 0 thread(s)
+2026-05-21 07:31:02 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 5 skipped | listing total: 5
+2026-05-21 07:31:04 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 5 skipped | listing total: 5
+2026-05-21 07:31:05 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tj4mw0 (WkwkwkLand) — "Pesta Sapi..."
+2026-05-21 07:31:05 [INFO    ] crawl_pipeline.posts |   [new] page: 1 new, 4 skipped | listing total: 6
+2026-05-21 07:31:06 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tj4mw0 done — 0 thread(s)
+2026-05-21 07:31:07 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 4 skipped | listing total: 6
+2026-05-21 07:31:09 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 4 skipped | listing total: 6
+2026-05-21 07:31:11 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 4 skipped | listing total: 6
+2026-05-21 07:31:12 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 4 skipped | listing total: 6
+2026-05-21 07:31:14 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 4 skipped | listing total: 6
+2026-05-21 07:31:15 [INFO    ] crawl_pipeline.posts |   [new] page: 1 new, 3 skipped | listing total: 7
+2026-05-21 07:31:15 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tiu4xb (indonesia) — "Gua masih gatau "Fufufafa" itu siapa and at this point ..."
+2026-05-21 07:31:16 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tiu4xb done — 3 thread(s)
+2026-05-21 07:31:17 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 3 skipped | listing total: 7
+2026-05-21 07:31:19 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 3 skipped | listing total: 7
+2026-05-21 07:31:21 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 3 skipped | listing total: 7
+2026-05-21 07:31:22 [INFO    ] crawl_pipeline.posts |   [new] page: 1 new, 2 skipped | listing total: 8
+2026-05-21 07:31:22 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tipqwi (indonesia) — "I feel that some social media have many voices saying t..."
+2026-05-21 07:31:23 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tipqwi done — 5 thread(s)
+2026-05-21 07:31:24 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:25 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:27 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:29 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:30 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:32 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:34 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:35 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:37 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:38 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:40 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:41 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:43 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:44 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:46 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:47 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 2 skipped | listing total: 8
+2026-05-21 07:31:49 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1til2t1 (WkwkwkLand) — "Indonesia Cemas 2069..."
+2026-05-21 07:31:49 [INFO    ] crawl_pipeline.posts |   [new] page: 1 new, 1 skipped | listing total: 9
+2026-05-21 07:31:49 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1til2t1 done — 0 thread(s)
+2026-05-21 07:31:50 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 1 skipped | listing total: 9
+2026-05-21 07:31:52 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 1 skipped | listing total: 9
+2026-05-21 07:31:53 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 1 skipped | listing total: 9
+2026-05-21 07:31:55 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 1 skipped | listing total: 9
+2026-05-21 07:31:56 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 1 skipped | listing total: 9
+2026-05-21 07:31:58 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 1 skipped | listing total: 9
+2026-05-21 07:31:59 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 1 skipped | listing total: 9
+2026-05-21 07:32:01 [INFO    ] crawl_pipeline.posts |   [new] page: 0 new, 1 skipped | listing total: 9
+2026-05-21 07:32:02 [INFO    ] crawl_pipeline.posts |   [new] page: 1 new, 0 skipped | listing total: 10
+2026-05-21 07:32:02 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Processing 1tik81a (WkwkwkLand) — "Marapthon..."
+2026-05-21 07:32:02 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] 1tik81a done — 0 thread(s)
+2026-05-21 07:32:03 [INFO    ] crawl_pipeline.posts | [PostsCrawl] Listing: top
+2026-05-21 07:32:03 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 10 skipped | listing total: 0
+2026-05-21 07:32:05 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 10 skipped | listing total: 0
+2026-05-21 07:32:06 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 10 skipped | listing total: 0
+2026-05-21 07:32:08 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 10 skipped | listing total: 0
+2026-05-21 07:32:10 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 10 skipped | listing total: 0
+2026-05-21 07:32:11 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 10 skipped | listing total: 0
+2026-05-21 07:32:13 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 10 skipped | listing total: 0
+2026-05-21 07:32:15 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 10 skipped | listing total: 0
+2026-05-21 07:32:16 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 10 skipped | listing total: 0
+2026-05-21 07:32:18 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 10 skipped | listing total: 0
+2026-05-21 07:32:20 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 10 skipped | listing total: 0
+2026-05-21 07:32:21 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 10 skipped | listing total: 0
+2026-05-21 07:32:24 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 10 skipped | listing total: 0
+2026-05-21 07:32:25 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 10 skipped | listing total: 0
+2026-05-21 07:32:27 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 10 skipped | listing total: 0
+2026-05-21 07:32:28 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Processing 1tihlqf (WkwkwkLand) — "The Orba question 🤔..."
+2026-05-21 07:32:28 [INFO    ] crawl_pipeline.posts |   [top] page: 2 new, 8 skipped | listing total: 2
+2026-05-21 07:32:28 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Processing 1tih0t0 (WkwkwkLand) — "Jangan salahin MBG lagi ya..."
+2026-05-21 07:32:29 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] 1tihlqf done — 0 thread(s)
+2026-05-21 07:32:29 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] 1tih0t0 done — 0 thread(s)
+2026-05-21 07:32:30 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 8 skipped | listing total: 2
+2026-05-21 07:32:31 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 8 skipped | listing total: 2
+2026-05-21 07:32:33 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 8 skipped | listing total: 2
+2026-05-21 07:32:34 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Processing 1tigik4 (WkwkwkLand) — "What have I done..."
+2026-05-21 07:32:34 [INFO    ] crawl_pipeline.posts |   [top] page: 1 new, 7 skipped | listing total: 3
+2026-05-21 07:32:35 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] 1tigik4 done — 0 thread(s)
+2026-05-21 07:32:36 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 7 skipped | listing total: 3
+2026-05-21 07:32:37 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 7 skipped | listing total: 3
+2026-05-21 07:32:38 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 7 skipped | listing total: 3
+2026-05-21 07:32:40 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 7 skipped | listing total: 3
+2026-05-21 07:32:42 [INFO    ] crawl_pipeline.posts |   [top] page: 0 new, 7 skipped | listing total: 3
+2026-05-21 07:32:43 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:32:45 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:32:49 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:32:56 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:33:04 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:33:14 [ERROR   ] crawl_pipeline.posts |   [top] Page fetch failed: Failed after 5 retries: https://www.reddit.com/user/chivalricsystems/m/indonesiasemua/top/.json
+2026-05-21 07:33:14 [INFO    ] crawl_pipeline.posts | [PostsCrawl] Listing: rising
+2026-05-21 07:33:14 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 2s (attempt 1/5)
+2026-05-21 07:33:16 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 4s (attempt 2/5)
+2026-05-21 07:33:20 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 6s (attempt 3/5)
+2026-05-21 07:33:27 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 8s (attempt 4/5)
+2026-05-21 07:33:35 [WARNING ] crawl_pipeline.posts | Rate-limited (429). Waiting 10s (attempt 5/5)
+2026-05-21 07:33:45 [ERROR   ] crawl_pipeline.posts |   [rising] Page fetch failed: Failed after 5 retries: https://www.reddit.com/user/chivalricsystems/m/indonesiasemua/rising/.json
+2026-05-21 07:33:45 [INFO    ] crawl_pipeline.posts | [PostsCrawl] Cycle complete. New this cycle: 23
+2026-05-21 07:33:45 [INFO    ] crawl_pipeline.posts | [PostsCrawl] Done. Grand total new posts: 23
+2026-05-21 07:33:45 [INFO    ] crawl_pipeline | [Pipeline] Producer finished. 23 new posts discovered.
+2026-05-21 07:33:45 [INFO    ] crawl_pipeline | [Pipeline] Sending 4 sentinel(s) to workers...
+2026-05-21 07:33:45 [INFO    ] crawl_pipeline | [Pipeline] Waiting for workers to finish...
+2026-05-21 07:33:45 [INFO    ] crawl_pipeline.worker-0 | [Worker 0] Received sentinel. Exiting.
+2026-05-21 07:33:45 [INFO    ] crawl_pipeline.worker-1 | [Worker 1] Received sentinel. Exiting.
+2026-05-21 07:33:45 [INFO    ] crawl_pipeline.worker-3 | [Worker 3] Received sentinel. Exiting.
+2026-05-21 07:33:45 [INFO    ] crawl_pipeline.worker-2 | [Worker 2] Received sentinel. Exiting.
+2026-05-21 07:33:45 [INFO    ] crawl_pipeline |   Worker CommentWorker-0 exited (code=0)
+2026-05-21 07:33:45 [INFO    ] crawl_pipeline |   Worker CommentWorker-1 exited (code=0)
+2026-05-21 07:33:45 [INFO    ] crawl_pipeline |   Worker CommentWorker-2 exited (code=0)
+2026-05-21 07:33:45 [INFO    ] crawl_pipeline |   Worker CommentWorker-3 exited (code=0)
+2026-05-21 07:33:45 [INFO    ] crawl_pipeline | [Pipeline] Steps 1+2 complete in 183.6s
+2026-05-21 07:33:45 [INFO    ] crawl_pipeline | 
+         (waiting 3s before Step 3)
+2026-05-21 07:33:48 [INFO    ] crawl_pipeline | [Step 3] Running DataProcessing (UltraChat format)...
+2026-05-21 07:33:48 [INFO    ] crawl_pipeline | [Pipeline] Step 3 complete in 0.2s
+2026-05-21 07:33:48 [INFO    ] crawl_pipeline | 
+============================================================
+2026-05-21 07:33:48 [INFO    ] crawl_pipeline |   Pipeline complete
+2026-05-21 07:33:48 [INFO    ] crawl_pipeline |   Posts discovered        : 23
+2026-05-21 07:33:48 [INFO    ] crawl_pipeline |   DB status               : {'done': 423}
+2026-05-21 07:33:48 [INFO    ] crawl_pipeline |   Dataset v1 size         : 237
+2026-05-21 07:33:48 [INFO    ] crawl_pipeline |   Dataset v2 size         : 240
+2026-05-21 07:33:48 [INFO    ] crawl_pipeline |   Total time              : 186.7s
+2026-05-21 07:33:48 [INFO    ] crawl_pipeline |   Summary saved to        : DataOutput/pipeline_summary.json
+2026-05-21 07:33:48 [INFO    ] crawl_pipeline | ============================================================
