@@ -44,8 +44,8 @@ HEADERS = {
     )
 }
 
-DELAY_BETWEEN_REQUESTS = 5
-DELAY_MORE_CHILDREN = 3
+DELAY_BETWEEN_REQUESTS = 15
+DELAY_MORE_CHILDREN = 10
 SENTINEL = None  # poison pill
 
 
@@ -57,10 +57,10 @@ SENTINEL = None  # poison pill
 def _request_with_retry(
     url: str,
     params: dict | None = None,
-    max_retries: int = 5,
+    max_retries: int = 10,
 ) -> requests.Response:
     log = get_logger("comments")
-    backoff = 2
+    backoff = 5
 
     for attempt in range(max_retries):
         try:

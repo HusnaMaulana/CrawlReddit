@@ -42,7 +42,7 @@ HEADERS = {
     )
 }
 
-MIN_DELAY_BETWEEN_REQUESTS = 5.0  # seconds
+MIN_DELAY_BETWEEN_REQUESTS = 15.0  # seconds
 SENTINEL = None  # poison pill for queue consumers
 
 
@@ -52,10 +52,10 @@ SENTINEL = None  # poison pill for queue consumers
 def _request_with_retry(
     url: str,
     params: dict | None = None,
-    max_retries: int = 5,
+    max_retries: int = 10,
 ) -> requests.Response:
     log = get_logger("posts")
-    backoff = 2
+    backoff = 5
 
     for attempt in range(max_retries):
         try:

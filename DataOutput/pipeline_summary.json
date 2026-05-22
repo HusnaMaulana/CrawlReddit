@@ -1,5 +1,5 @@
 {
-  "pipeline_run_at": "2026-05-21T08:07:45.619223+00:00",
+  "pipeline_run_at": "2026-05-21T10:29:33.352373+00:00",
   "listings": [
     "hot",
     "new",
@@ -7,19 +7,18 @@
     "rising"
   ],
   "workers": 1,
-  "posts_discovered": 0,
+  "posts_discovered": 2651,
   "posts_file": "DataOutput/posts.jsonl",
   "comments_file": "DataOutput/comments.jsonl",
   "db_path": "DataOutput/crawl_state.db",
   "db_status_counts": {
-    "done": 654,
-    "error": 47
+    "done": 3989
   },
   "dataset_jsonv1": "DataOutput/indonesia_ultrachat_stylev1.json",
   "dataset_jsonv2": "DataOutput/indonesia_ultrachat_stylev2.json",
-  "dataset_v1_size": 621,
-  "dataset_v2_size": 634,
-  "step12_seconds": 2745.5,
-  "step3_seconds": 0.7,
-  "total_seconds": 2749.2
+  "dataset_v1_size": 3993,
+  "dataset_v2_size": 4051,
+  "step12_seconds": 42590.9,
+  "step3_seconds": 2.8,
+  "total_seconds": 42596.7
 }
