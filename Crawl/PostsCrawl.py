@@ -1,18 +1,3 @@
-"""
-PostsCrawl.py — Multi-listing Reddit post crawler (producer side).
-
-Key improvements over v1
-────────────────────────
-• Crawls hot, new, top, rising (4× coverage)
-• SQLite-backed dedup — O(1) lookups that survive restarts
-• Pagination cursor persisted to SQLite — resume after crash
-• Exponential back-off retry (2→4→8→16→32 s)
-• 429 / 5xx handling with Retry-After respect
-• Optional multiprocessing.Queue for real-time producer-consumer
-• Continuous mode (loop forever with configurable delay)
-• JSONL output (append-only, no O(n²) rewrite)
-"""
-
 import multiprocessing
 import os
 import time
@@ -24,8 +9,6 @@ from Utils.logging_config import get_logger, setup_logging
 from Utils.storage import CrawlDatabase, JsonlWriter
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
-# ── constants ─────────────────────────────────────────────────
 
 MULTIREDDIT_BASE = "https://www.reddit.com/user/chivalricsystems/m/indonesiasemua"
 
@@ -42,12 +25,8 @@ HEADERS = {
     )
 }
 
-MIN_DELAY_BETWEEN_REQUESTS = 15.0  # seconds
-SENTINEL = None  # poison pill for queue consumers
-
-
-# ── HTTP layer ────────────────────────────────────────────────
-
+MIN_DELAY_BETWEEN_REQUESTS = 15.0
+SENTINEL = None
 
 def _request_with_retry(
     url: str,
@@ -97,7 +76,6 @@ def _request_with_retry(
 
     raise RuntimeError(f"Failed after {max_retries} retries: {url}")
 
-
 def _fetch_page(
     listing: str,
     batch_limit: int,
@@ -115,10 +93,6 @@ def _fetch_page(
     next_after = body["data"].get("after")
     return posts, next_after
 
-
-# ── post extraction ───────────────────────────────────────────
-
-
 def _extract_post(raw: dict) -> dict:
     d = raw["data"]
     return {
@@ -133,10 +107,6 @@ def _extract_post(raw: dict) -> dict:
         "selftext": d.get("selftext", ""),
     }
 
-
-# ── main crawler ──────────────────────────────────────────────
-
-
 def crawl_posts(
     limit: int = 5000,
     output_file: str = "DataOutput/posts.jsonl",
@@ -146,24 +116,7 @@ def crawl_posts(
     continuous: bool = False,
     cycle_delay: int = 300,
 ) -> int:
-    """
-    Crawl posts from one or more listings and persist them.
 
-    Parameters
-    ──────────
-    limit        : Max new posts to discover (per run / per cycle).
-    output_file  : Path to JSONL output file.
-    db_path      : Path to SQLite state database.
-    listings     : Listings to crawl (default: hot, new, top, rising).
-    queue        : If provided, push each new post dict into this queue
-                   so comment workers can start immediately.
-    continuous   : If True, loop indefinitely with `cycle_delay` pauses.
-    cycle_delay  : Seconds to sleep between continuous cycles.
-
-    Returns
-    ───────
-    Number of new posts discovered (across all cycles).
-    """
     if listings is None:
         listings = ["hot", "new", "top", "rising"]
 
@@ -239,7 +192,6 @@ def crawl_posts(
                     f"{skipped} skipped | listing total: {fetched_this_listing}"
                 )
 
-                # persist / clear cursor
                 after = next_after
                 db.save_cursor(cursor_key, after or "")
 
@@ -251,8 +203,6 @@ def crawl_posts(
 
         log.info(f"[PostsCrawl] Cycle complete. New this cycle: {cycle_new}")
         return cycle_new
-
-    # ── run ───────────────────────────────────────────────────
 
     if continuous:
         log.info("[PostsCrawl] Continuous mode active.")
@@ -270,9 +220,6 @@ def crawl_posts(
     db.close()
     log.info(f"[PostsCrawl] Done. Grand total new posts: {grand_total}")
     return grand_total
-
-
-# ── CLI entrypoint ────────────────────────────────────────────
 
 if __name__ == "__main__":
     import argparse

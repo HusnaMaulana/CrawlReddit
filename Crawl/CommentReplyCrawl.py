@@ -1,19 +1,3 @@
-"""
-CommentReplyCrawl.py — Recursive Reddit comment crawler.
-
-All original media detection, build_reply_tree, expand_more_children,
-and fetch_comments logic is preserved unchanged.
-
-New additions
-─────────────
-• comment_worker()   — multiprocessing worker that consumes posts from a
-                       Queue, fetches comments, writes JSONL, updates SQLite
-• crawl_comments()   — standalone mode reads posts from JSONL / JSON file
-                       (backward-compatible with original behaviour)
-• Per-post flush     — crash = lose at most one post's comments
-• Error isolation    — one bad post is logged + marked; crawl continues
-"""
-
 import multiprocessing
 import os
 import re
@@ -28,8 +12,6 @@ from Utils.logging_config import get_logger, setup_logging
 from Utils.storage import CrawlDatabase, JsonlWriter, load_input
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
-# ── config ────────────────────────────────────────────────────
 
 PROXIES = {
     "http": os.environ.get("HTTP_PROXY"),
@@ -46,13 +28,7 @@ HEADERS = {
 
 DELAY_BETWEEN_REQUESTS = 15
 DELAY_MORE_CHILDREN = 10
-SENTINEL = None  # poison pill
-
-
-# ─────────────────────────────────────────────────────────────
-# HTTP UTILS  (unchanged from original)
-# ─────────────────────────────────────────────────────────────
-
+SENTINEL = None
 
 def _request_with_retry(
     url: str,
@@ -102,11 +78,6 @@ def _request_with_retry(
 
     raise RuntimeError(f"Failed after {max_retries} retries: {url}")
 
-
-# ─────────────────────────────────────────────────────────────
-# MEDIA DETECTION  (unchanged from original)
-# ─────────────────────────────────────────────────────────────
-
 _MEDIA_DOMAINS = re.compile(
     r"https?://"
     r"(?:"
@@ -132,7 +103,6 @@ _MEDIA_EXTENSIONS = re.compile(
 
 _INLINE_IMAGE_MD = re.compile(r"!\[.*?\]\(https?://", re.IGNORECASE)
 
-
 def has_media(text: str) -> bool:
     if not text:
         return False
@@ -141,7 +111,6 @@ def has_media(text: str) -> bool:
         or _MEDIA_EXTENSIONS.search(text)
         or _INLINE_IMAGE_MD.search(text)
     )
-
 
 def is_media_post(post_data: dict) -> bool:
     raw_body = (post_data.get("selftext") or "").strip()
@@ -161,12 +130,6 @@ def is_media_post(post_data: dict) -> bool:
             has_media_metadata,
         ]
     )
-
-
-# ─────────────────────────────────────────────────────────────
-# MORECHILDREN API  (unchanged from original)
-# ─────────────────────────────────────────────────────────────
-
 
 def expand_more_children(link_id: str, children_ids: list[str]) -> list[dict]:
     if not children_ids:
@@ -194,12 +157,6 @@ def expand_more_children(link_id: str, children_ids: list[str]) -> list[dict]:
         time.sleep(DELAY_MORE_CHILDREN)
 
     return all_items
-
-
-# ─────────────────────────────────────────────────────────────
-# RECURSIVE COMMENT TREE  (unchanged from original)
-# ─────────────────────────────────────────────────────────────
-
 
 def build_reply_tree(
     reply_children: list[dict],
@@ -250,12 +207,6 @@ def build_reply_tree(
         )
 
     return tree
-
-
-# ─────────────────────────────────────────────────────────────
-# FETCH COMMENTS  (unchanged from original)
-# ─────────────────────────────────────────────────────────────
-
 
 def fetch_comments(post_id: str, subreddit: str) -> list[dict]:
     log = get_logger("comments")
@@ -325,25 +276,13 @@ def fetch_comments(post_id: str, subreddit: str) -> list[dict]:
 
     return result
 
-
-# ─────────────────────────────────────────────────────────────
-# QUEUE WORKER  (NEW)
-# ─────────────────────────────────────────────────────────────
-
-
 def comment_worker(
     queue: "multiprocessing.Queue",
     db_path: str,
     output_file: str,
     worker_id: int = 0,
 ) -> None:
-    """
-    Multiprocessing worker process.
-
-    Consumes post dicts from `queue`, calls fetch_comments() for each,
-    writes results to JSONL, and updates SQLite status.
-    Exits cleanly when it receives the SENTINEL (None) value.
-    """
+  
     setup_logging()
     log = get_logger(f"worker-{worker_id}")
     db = CrawlDatabase(db_path)
@@ -380,23 +319,13 @@ def comment_worker(
 
         time.sleep(DELAY_BETWEEN_REQUESTS)
 
-
-# ─────────────────────────────────────────────────────────────
-# STANDALONE CRAWL  (backward-compatible)
-# ─────────────────────────────────────────────────────────────
-
-
 def crawl_comments(
     posts_file: str = "DataOutput/posts.jsonl",
     output_file: str = "DataOutput/comments.jsonl",
     db_path: str = "DataOutput/crawl_state.db",
     max_posts: int | None = 2500,
 ) -> list[dict]:
-    """
-    Standalone mode: read posts from a JSONL/JSON file and crawl
-    comments sequentially.  Preserves backward compatibility with
-    the original single-step usage.
-    """
+
     setup_logging()
     log = get_logger("comments")
 
@@ -423,7 +352,6 @@ def crawl_comments(
         subreddit = post.get("subreddit", "")
         title = (post.get("title") or "")[:60]
 
-        # Skip if already done
         if not db.is_known(post_id):
             db.mark_pending(post_id, subreddit=subreddit)
 
@@ -450,11 +378,6 @@ def crawl_comments(
 
     db.close()
     return all_comments
-
-
-# ─────────────────────────────────────────────────────────────
-# CLI ENTRYPOINT
-# ─────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     import argparse

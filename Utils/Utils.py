@@ -1,11 +1,8 @@
 import json
 import os
 
-
 def append_jsonl(file_path: str, items: list[dict]) -> None:
-    """
-    Append items to JSONL file.
-    """
+
     if not items:
         return
 
@@ -15,14 +12,11 @@ def append_jsonl(file_path: str, items: list[dict]) -> None:
         for item in items:
             f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
-
 def load_existing_ids(
     file_path: str,
     id_field: str = "id"
 ) -> set[str]:
-    """
-    Load existing IDs from JSONL file.
-    """
+
     if not os.path.exists(file_path):
         return set()
 
@@ -39,11 +33,8 @@ def load_existing_ids(
 
     return ids
 
-
 def load_jsonl(file_path: str) -> list[dict]:
-    """
-    Load entire JSONL file.
-    """
+
     if not os.path.exists(file_path):
         return []
 

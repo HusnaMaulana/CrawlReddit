@@ -27,14 +27,10 @@ import argparse
 import sys
 import os
 
-# ── ensure project root is importable ────────────────────────
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from Pipeline.Pipeline import run_pipeline
 from Utils.logging_config import setup_logging
-
-# ── CLI ───────────────────────────────────────────────────────
-
 
 def main() -> None:
     setup_logging()
@@ -44,7 +40,6 @@ def main() -> None:
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
 
-    # ── crawl scope ───────────────────────────────────────────
     parser.add_argument(
         "--limit",
         type=int,
@@ -57,7 +52,6 @@ def main() -> None:
         help="Comma-separated listing types to crawl.",
     )
 
-    # ── parallelism ───────────────────────────────────────────
     parser.add_argument(
         "--workers",
         type=int,
@@ -65,7 +59,6 @@ def main() -> None:
         help="Number of parallel comment-crawling worker processes.",
     )
 
-    # ── files ─────────────────────────────────────────────────
     parser.add_argument(
         "--posts-file",
         default="DataOutput/posts.jsonl",
@@ -97,7 +90,6 @@ def main() -> None:
         help="Output path for v2 UltraChat dataset.",
     )
 
-    # ── modes ─────────────────────────────────────────────────
     parser.add_argument(
         "--continuous",
         action="store_true",
@@ -147,7 +139,6 @@ def main() -> None:
         summary_file=args.summary_file,
         delay_between_steps=args.step_delay,
     )
-
 
 if __name__ == "__main__":
     main()
